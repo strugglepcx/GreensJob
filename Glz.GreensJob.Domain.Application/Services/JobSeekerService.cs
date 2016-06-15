@@ -680,5 +680,15 @@ namespace Glz.GreensJob.Domain.Application.Services
             var cacheKey = Const.SeekerSessionCodeCacheKey + requestParam.jsId;
             _cache.Remove(cacheKey);
         }
+
+        public void Attention(AttentionRequestParam requestParam)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CancelAttention(CancelAttentionRequestParam requestParam)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1109,6 +1109,26 @@
             ping++回调结果模型
             </summary>
         </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.AttentionRequestParam">
+            <summary>
+            关注请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.AttentionRequestParam.companyId">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.CancelAttentionRequestParam">
+            <summary>
+            取消关注公司请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CancelAttentionRequestParam.companyId">
+            <summary>
+            公司Id
+            </summary>
+        </member>
         <member name="T:Glz.GreensJob.Dto.RequestParams.CompleteExtractApplysRequestParam">
             <summary>
             完成申请请求操作
