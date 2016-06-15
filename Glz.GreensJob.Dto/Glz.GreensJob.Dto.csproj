@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D824C3AC-EBE4-4E6B-8FD6-1D77F36CC5B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glz.GreensJob.Dto</RootNamespace>
+    <AssemblyName>Glz.GreensJob.Dto</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Glz.GreensJob.WebApi\App_Data\Glz.GreensJob.Dto.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.Extension, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.Extension.1.2.0.1\lib\net45\NPOI.Extension.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressObject.cs" />
+    <Compile Include="AgencyRecruitJobObject.cs" />
+    <Compile Include="CityCoordinateModel.cs" />
+    <Compile Include="CityModel.cs" />
+    <Compile Include="CityObject.cs" />
+    <Compile Include="CollectObject.cs" />
+    <Compile Include="CompanyObject.cs" />
+    <Compile Include="ComplaintObject.cs" />
+    <Compile Include="ConfigurationModel.cs" />
+    <Compile Include="CountyObject.cs" />
+    <Compile Include="DailyRangeModel.cs" />
+    <Compile Include="DeptObject.cs" />
+    <Compile Include="EmployeeJobInfo.cs" />
+    <Compile Include="EnrollDateModel.cs" />
+    <Compile Include="EnrollDetailObject.cs" />
+    <Compile Include="EnrollObject.cs" />
+    <Compile Include="EnrollPayDetailModel.cs" />
+    <Compile Include="ExtractApplyModel.cs" />
+    <Compile Include="FeedBackObject.cs" />
+    <Compile Include="GetJobGroupsByCompanyModel.cs" />
+    <Compile Include="GetJobsModel.cs" />
+    <Compile Include="JobDraftObject.cs" />
+    <Compile Include="JobGroupObject.cs" />
+    <Compile Include="JobInfo.cs" />
+    <Compile Include="JobModel.cs" />
+    <Compile Include="JobSeekerMessageModel.cs" />
+    <Compile Include="JobSeekerObject.cs" />
+    <Compile Include="JobCategoryObject.cs" />
+    <Compile Include="JobClassifyObject.cs" />
+    <Compile Include="JobObject.cs" />
+    <Compile Include="JobSchduleObject.cs" />
+    <Compile Include="JobSeekerWalletActionLogModel.cs" />
+    <Compile Include="PayeeModel.cs" />
+    <Compile Include="PingppResultDataModel.cs" />
+    <Compile Include="PingppResultDataObjectModel.cs" />
+    <Compile Include="PingppResultModel.cs" />
+    <Compile Include="RequestParams\AddJobDraftRequestParam.cs" />
+    <Compile Include="RequestParams\AttentionRequestParam.cs" />
+    <Compile Include="RequestParams\AutoCancelApplyRequestParam.cs" />
+    <Compile Include="RequestParams\CancelAttentionRequestParam.cs" />
+    <Compile Include="RequestParams\CompleteExtractApplysRequestParam.cs" />
+    <Compile Include="RequestParams\ConfirmApplyRequestParam.cs" />
+    <Compile Include="RequestParams\DspMsgListRequestParam.cs" />
+    <Compile Include="RequestParams\DspTransactionInfoRequestParam.cs" />
+    <Compile Include="RequestParams\EditEnrollDatesRequestParam.cs" />
+    <Compile Include="RequestParams\EmployRequestParam.cs" />
+    <Compile Include="RequestParams\EnrollPayRequestParam.cs" />
+    <Compile Include="RequestParams\GetDailyRecruitRequestParam.cs" />
+    <Compile Include="RequestParams\GetExtractApplysRequestParam.cs" />
+    <Compile Include="RequestParams\GetJobGroupsByCompanyRequestParam.cs" />
+    <Compile Include="RequestParams\GetOpenCitiesRequestParam.cs" />
+    <Compile Include="RequestParams\GetJobDraftListRequestParam.cs" />
+    <Compile Include="RequestParams\GetJobDraftRequestParam.cs" />
+    <Compile Include="RequestParams\GetJobsOrderByRelaseDateRequestParam.cs" />
+    <Compile Include="RequestParams\GetPayDetailRequestParam.cs" />
+    <Compile Include="RequestParams\GetResumeBRequestParam.cs" />
+    <Compile Include="RequestParams\GetResumeRequestParam.cs" />
+    <Compile Include="RequestParams\GetSuccessPayDetailRequestParam.cs" />
+    <Compile Include="RequestParams\GetUniversitysRequestParam.cs" />
+    <Compile Include="RequestParams\ImportPayDetailRequestParam.cs" />
+    <Compile Include="RequestParams\LogoutRequestParam.cs" />
+    <Compile Include="RequestParams\PayCallBackRequestParam.cs" />
+    <Compile Include="RequestParams\PaymentRequestParam.cs" />
+    <Compile Include="RequestParams\PaymentSuccessRequestParam.cs" />
+    <Compile Include="RequestParams\RegisterRequestParam.cs" />
+    <Compile Include="RequestParams\RetrievePasswordRequestParam.cs" />
+    <Compile Include="RequestParams\SetResumeRequestParam.cs" />
+    <Compile Include="RequestParams\StopJobRequestParam.cs" />
+    <Compile Include="RequestParams\TransferMoneyOutRequestParam.cs" />
+    <Compile Include="VerificationCodeModel.cs" />
+    <Compile Include="PayCategoryObject.cs" />
+    <Compile Include="PayUnitObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvinceObject.cs" />
+    <Compile Include="PublisherObject.cs" />
+    <Compile Include="PublisherRightObject.cs" />
+    <Compile Include="RequestParams\AccountPwdSetRequestParam.cs" />
+    <Compile Include="RequestParams\ApplyJobRequestParam.cs" />
+    <Compile Include="RequestParams\BindingMobileRequestParam.cs" />
+    <Compile Include="RequestParams\CancelApplyRequestParam.cs" />
+    <Compile Include="RequestParams\CancelCollectRequestParam.cs" />
+    <Compile Include="RequestParams\CompanyActionRequestParam.cs" />
+    <Compile Include="RequestParams\ConfigurationSetRequestParam.cs" />
+    <Compile Include="RequestParams\EditJobInfoRequestParam.cs" />
+    <Compile Include="RequestParams\FavoriteJob.cs" />
+    <Compile Include="RequestParams\GetCitiesRequestParam.cs" />
+    <Compile Include="RequestParams\GetCityForCoordinateRequestParam.cs" />
+    <Compile Include="RequestParams\GetConfigurationRequestParam.cs" />
+    <Compile Include="RequestParams\GetEmployeeJobsRequestParam.cs" />
+    <Compile Include="RequestParams\GetJobDetailRequestParam.cs" />
+    <Compile Include="RequestParams\GetJobGroupDetailRequestParam.cs" />
+    <Compile Include="RequestParams\GetJobInfoRequestParam.cs" />
+    <Compile Include="RequestParams\GetOpenIdRequestParam.cs" />
+    <Compile Include="RequestParams\GetJobsRequestParam.cs" />
+    <Compile Include="RequestParams\GetUserInfoRequestParam.cs" />
+    <Compile Include="RequestParams\GetVerifyCodeRequestParam.cs" />
+    <Compile Include="RequestParams\ICoordinateRequestParam.cs" />
+    <Compile Include="RequestParams\IdentityRequestParam.cs" />
+    <Compile Include="RequestParams\IPageRequestParam.cs" />
+    <Compile Include="RequestParams\LoginActionRequestParam.cs" />
+    <Compile Include="RequestParams\LoginRequestParam.cs" />
+    <Compile Include="RequestParams\ModifyApplyRequestParam.cs" />
+    <Compile Include="RequestParams\PrefetchSearchRequestParam.cs" />
+    <Compile Include="RequestParams\PublisherActionRequestParam.cs" />
+    <Compile Include="RequestParams\RegisterActionRequestParam.cs" />
+    <Compile Include="RequestParams\ReleaseJobRequestParam.cs" />
+    <Compile Include="RequestParams\SearchJobsRequestParam.cs" />
+    <Compile Include="RequestParams\WeiXinIdentityRequestParam.cs" />
+    <Compile Include="ResumeObject.cs" />
+    <Compile Include="SearchRecordObject.cs" />
+    <Compile Include="UniversityObject.cs" />
+    <Compile Include="MobileUserInfoModel.cs" />
+    <Compile Include="JobRecruitDetailModel.cs" />
+    <Compile Include="VerificationCodeObject.cs" />
+    <Compile Include="WalletObject.cs" />
+    <Compile Include="WebUserInfoModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glz.Infrastructure\Glz.Infrastructure.csproj">
+      <Project>{5afa4569-2727-48b1-91d1-9d321b439966}</Project>
+      <Name>Glz.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

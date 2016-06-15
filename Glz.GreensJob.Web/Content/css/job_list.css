@@ -1,0 +1,20 @@
+.page{
+	margin: 80px 0 20px 200px;
+}
+.main{
+	background-color: #fff;
+}
+.spacing{
+	margin-left: 30px;
+}
+.title{
+	margin: 25px 0 10px 20px;
+}
+.title1{
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 24px;
+}
+.title2{
+	font-size: 18px;
+}

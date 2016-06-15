@@ -1,0 +1,96 @@
+﻿@model Glz.Infrastructure.PagedResultModel<Glz.Infrastructure.Logging.Models.ActionExceptionLogModel>
+
+@{
+    ViewBag.Title = "ActionLogList";
+}
+@Html.ActionLink("Help Page Home", "Index")
+<h2>错误日志</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            控制器
+        </th>
+        <th>
+            动作
+        </th>
+        <th>
+            内容类型
+        </th>
+        <th>
+            请求Url
+        </th>
+        <th>
+            请求内容
+        </th>
+        <th>
+            错误类型
+        </th>
+        <th>
+            错误消息
+        </th>
+        <th>
+            堆栈信息
+        </th>
+        <th>
+            时间
+        </th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var item in Model.Data)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ControllerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ActionName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContentType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequestUrl)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequestContent)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExceptionType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExceptionMessage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExceptionTraceStack)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreateTime)
+                </td>
+            </tr>
+        }
+    }
+
+</table>
+@if (Model != null)
+{
+    <nav>
+        <ul class="pagination">
+            @*<li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>*@
+            @for (var i = 1; i <= (Model.TotalPages.Value > 20 ? 20 : Model.TotalPages.Value); i++)
+            {
+                <li><a href="?actionName=@{@ViewBag.ActionName}&pageIndex=@i&pageSize=20">@i</a></li>
+            }
+            @*<li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>*@
+        </ul>
+    </nav>
+}

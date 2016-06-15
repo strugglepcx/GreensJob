@@ -1,0 +1,118 @@
+body {
+    position: relative;
+}
+.js-modal, .js-modal-mask, .js-confirm-mask, .js-modal-border {
+    position: absolute;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.js-modal-border {
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    padding: 5px;
+}
+.js-show {
+    display: block;
+}
+.js-modal-mask {
+    background-color: #000;
+    bottom: 0px;
+    font-size: 14px;
+    height: 100%;
+    left: 0px;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=20)";
+    right: 0px;
+    top: 0px;
+    z-index: 11030;
+}
+.js-modal-mask iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=40);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)";
+    z-index: 1040;
+}
+.js-confirm-mask {
+    bottom: 0px;
+    font-size: 14px;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1030;
+}
+.js-confirm-mask iframe {
+    width: 100%;
+    height: 100%;
+    z-index: 1040;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+}
+.js-modal, .js-modal-border {
+    z-index: 11050;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+}
+.js-modal-head {
+    cursor: default;
+    line-height: 100%;
+    font-size: 14px;
+    padding: 10px;
+    background: #f1f1f1;
+    color: #4b4b4b;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.js-modal-close {
+    color: #999;
+    cursor: pointer;
+    font-family: tahoma;
+    font-size: 24px;
+    height: 20px;
+    _line-height: 14px !important;
+    width: 20px;
+    position: absolute;
+    right: 7px;
+    text-decoration: none;
+    top: 7px;
+    z-index: 10;
+    background: url('../../../image/v5/job/job_modal_close_ico_v1.png') no-repeat -28px 0;
+    text-indent: -9999em;
+    overflow: hidden
+}
+.js-modal-close:hover {
+    color: #e30;
+    text-decoration: none;
+    background-position: 0 0;
+}
+.js-modal-loading {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0 0 -16px;
+    background: url(images/loading.gif) no-repeat;
+}
+.js-modal-content {
+    background-color: #fff;
+    overflow-y: auto;
+}
+.js-modal-content.noScroll {
+    overflow: hidden;
+}
+.js-confirm {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.js-modal-title {
+    font-weight: bold
+}

@@ -1,0 +1,24 @@
+{
+	"addressJson": [
+		{
+			"name": "武  汉",
+			"index": 0
+		}, {
+			"name": "合  肥",
+			"index": 1
+		}, {
+			"name": "南  昌",
+			"index": 2
+		}, {
+			"name": "广  州",
+			"index": 3
+		}, {
+			"name": "长  沙",
+			"index": 4
+		}, {
+			"name": "其 他",
+			"index": 5
+		}
+	]
+	
+}

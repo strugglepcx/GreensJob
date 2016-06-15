@@ -1,0 +1,39 @@
+.span1{
+	font-size: 20px;
+}
+.span2{
+	display: inline-block;
+	width: 100px;
+	font-size: 15px;
+}
+.spacing{
+	margin-bottom: 30px
+}
+.content{
+	margin-left: 50px;
+	/*padding-left: auto;
+	padding-right: auto;
+	margin-left: auto;
+	margin-right: auto;*/
+}
+.title{
+	padding-left: 30px;
+}
+.line{
+	height: 1px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.title{
+	margin: 30px 0 20px 0;
+}
+.span3{
+	display: inline-block;
+	width: 10px;
+}
+.bgf h2{
+	margin-bottom:50px;
+}
+.remind{
+	color: #f00;
+}

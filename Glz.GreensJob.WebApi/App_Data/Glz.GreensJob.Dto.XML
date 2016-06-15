@@ -1,0 +1,2428 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Glz.GreensJob.Dto</name>
+    </assembly>
+    <members>
+        <member name="T:Glz.GreensJob.Dto.AddressObject">
+            <summary>
+            地址信息
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AddressObject.addr">
+            <summary>
+            地址名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AddressObject.lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AddressObject.lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AddressObject.cityId">
+            <summary>
+            城市Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AddressObject.districtId">
+            <summary>
+            城区Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.id">
+            <summary>
+                代招职位编号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.name">
+            <summary>
+                代招职位名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.contact">
+            <summary>
+                联系人
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.phone">
+            <summary>
+                联系电话
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.recruitNum">
+            <summary>
+                招聘人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.payUnit">
+            <summary>
+                结算单位
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.salary">
+            <summary>
+                工资
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.addr">
+            <summary>
+                工作地址
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.status">
+            <summary>
+                审核状态
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.startDate">
+            <summary>
+                开始时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.endDate">
+            <summary>
+                结束时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.AgencyRecruitJobObject.createDate">
+            <summary>
+                创建时间
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.CityCoordinateModel">
+            <summary>
+            城市坐标模型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.CityCoordinateModel.Name">
+            <summary>
+            城市名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.CityCoordinateModel.Lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.CityCoordinateModel.Lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.CityCoordinateModel.Location">
+            <summary>
+            地理位置
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.CityModel">
+            <summary>
+            城市模型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ConfigurationModel.recruitMessage">
+            <summary>
+            是否接受录用、招聘消息 1 接受 0 不接受
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ConfigurationModel.urgentJobMessage">
+            <summary>
+            紧急高薪工作消息1 接受 0 不接受
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.DailyRangeModel.Type">
+            <summary>
+            0：小于，1：区间，2：大于
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.DailyRangeModel.Min">
+            <summary>
+            最小
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.DailyRangeModel.Max">
+            <summary>
+            最大
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.EmployeeJobInfo">
+            <summary>
+            员工相关职位信息
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.jobId">
+            <summary>
+            职位Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.jobName">
+            <summary>
+            职位名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.JobClassId">
+            <summary>
+            职位分类Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.JobClass">
+            <summary>
+            职位分类
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.salary">
+            <summary>
+            薪资
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.salaryUnit">
+            <summary>
+            薪资单位
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.payMethod">
+            <summary>
+            结算类型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.jobAddress">
+            <summary>
+            工作地点
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.startDate">
+            <summary>
+            起始时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.dayNum">
+            <summary>
+            工作总天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.actualStartEndDate">
+            <summary>
+            起止日期信息
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.actualDayNum">
+            <summary>
+            实际工作天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.incomeAmount">
+            <summary>
+            收入金额
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.isConfirm">
+            <summary>
+            是否确认
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.isFired">
+            <summary>
+            是否解雇
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.startEndTime">
+            <summary>
+            开始结束时间 8:00-9:00
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.EnrollDates">
+            <summary>
+            报名时间列表
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EmployeeJobInfo.EmployDates">
+            <summary>
+            报名时间列表
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.EnrollDateModel">
+            <summary>
+            录用时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollDateModel.Date">
+            <summary>
+            时间格式：MM-dd 08:00-09:00
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.EnrollPayDetailModel">
+            <summary>
+            支付明细Model
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.UserName">
+            <summary>
+            求职者姓名
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.UserMobile">
+            <summary>
+            求职者手机号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.StartDate">
+            <summary>
+            工作开始日期
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.EndDate">
+            <summary>
+            工作结束日期
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.WorkDays">
+            <summary>
+            工作天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.AmountSalary">
+            <summary>
+            支付总金额
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.BasePay">
+            <summary>
+            基本工资
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.Bonus">
+            <summary>
+            奖金
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.Debit">
+            <summary>
+            扣款
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.Job_ID">
+            <summary>
+            职位Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.JobName">
+            <summary>
+            职位名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.State">
+            <summary>
+            状态（0：未付款，1：已付款）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.PayTime">
+            <summary>
+            支付时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.EnrollPayDetailModel.JobGroupName">
+            <summary>
+            职位组名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ExtractApplyModel.ID">
+            <summary>
+            提现申请Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ExtractApplyModel.JobSeeker_ID">
+            <summary>
+            求职者Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ExtractApplyModel.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ExtractApplyModel.BankCardNo">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ExtractApplyModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ExtractApplyModel.ExecuteTime">
+            <summary>
+            执行时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ExtractApplyModel.Executor_ID">
+            <summary>
+            执行人
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ExtractApplyModel.State">
+            <summary>
+            状态（0：未处理，1：已处理）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ExtractApplyModel.Mobile">
+            <summary>
+            用户手机号
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.GetJobGroupsByCompanyModel">
+            <summary>
+            获取职位组根据公司结果实体
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobGroupsByCompanyModel.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobGroupsByCompanyModel.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.GetJobsModel">
+            <summary>
+            获取列表模型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.Id">
+            <summary>
+            工作Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.class">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.jobClass">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.jobClassName">
+            <summary>
+            分类名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.JobTitle">
+            <summary>
+            职位标题
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.jobDes">
+            <summary>
+            职位详情
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.audit">
+            <summary>
+            审核过的企业发布的职位是认证的 1 认证的 0 没有认证的
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.salary">
+            <summary>
+            薪资
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.clearanceMethod">
+            <summary>
+            1 日结 2 周结 3 月结 4 完工结
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.releaseTime">
+            <summary>
+            发布时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.dayNum">
+            <summary>
+            上班天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.startDate">
+            <summary>
+            开始工作时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.distance">
+            <summary>
+            距离
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.CollectState">
+            <summary>
+            是否收藏
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.ApplyState">
+            <summary>
+            是否报名
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.districtName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.EmployStatu">
+            <summary>
+            录用状态 0:未报名 1:报名 5:录用未确认 10:录用
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.nowToEndDateDayNum">
+            <summary>
+             当前时间到工作结束时间的天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.isSex">
+            <summary>
+            是否限制男女
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.GetJobsModel.gender">
+            <summary>
+            性别要求 1 男， 2 女
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.JobGroupObject">
+            <summary>
+            职位列表
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.ID">
+            <summary>
+            职位组Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.name">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.jobClassifyID">
+            <summary>
+            类型Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.jobCategoryID">
+            <summary>
+            档期Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.genderLimit">
+            <summary>
+            性别 男 1、女 0、男女不限 2
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.heightLimit">
+            <summary>
+            身高限制158以上(0)，160以上(1)，165以上(2)，168以上(3)，170以上(4)，175以上(5)，180以上(6)，185以上(7)
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.recruitNum">
+            <summary>
+            招聘人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.erollMethod">
+            <summary>
+            1 按天报名，2及以上表示至少连续的天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.startDate">
+            <summary>
+            招聘起始时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.endDate">
+            <summary>
+            招聘结束时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.startTime">
+            <summary>
+            工作开始时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.endTime">
+            <summary>
+            工作结束时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.jobAdrressList">
+            <summary>
+            工作地点
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.payCategoryID">
+            <summary>
+            日结 1 周结 2 月结3完工结 4
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.payUnitID">
+            <summary>
+            工资单位，/小时（0） /天（1），/周（2） /月（3）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.salary">
+            <summary>
+            工资
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.urgent">
+            <summary>
+            录用后是否消息提醒
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.msgByUniversityList">
+            <summary>
+            发布短信学校列表
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.healthCertificate">
+            <summary>
+            是否需要健康证
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.interview">
+            <summary>
+            是否需要面试
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.employer">
+            <summary>
+            工作单位
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.contactMan">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.mobileNumber">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.gatheringPlace">
+            <summary>
+            集合地点
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.interviewPlace">
+            <summary>
+            面试地点
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.status">
+            <summary>
+            状态 1：草稿，2：待审核
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.content">
+            <summary>
+            职位详情
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.continousDays">
+            <summary>
+            连续工作天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobGroupObject.autoTimeShare">
+            <summary>
+            是否分时
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.JobInfo">
+            <summary>
+            职位管理工作对象
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.jobGroupID">
+            <summary>
+            jobGroupID
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.jobName">
+            <summary>
+            职位名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.releaseStatus">
+            <summary>
+            发布状态
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.jobClass">
+            <summary>
+            类型（本地有图片，对应显示）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.jobSchedule">
+            <summary>
+            结算方式
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.unitPrice">
+            <summary>
+            单位价格
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.unitName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.recruitmentNum">
+            <summary>
+            招聘人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.startdate">
+            <summary>
+            招聘天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.employer">
+            <summary>
+            用人单位
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.applicantNum">
+            <summary>
+            报名/申请人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.employNum">
+            <summary>
+            录用人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.onlineEmployNum">
+            <summary>
+            线上录用人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.offineEmployNum">
+            <summary>
+            线下录用人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobInfo.releaseDate">
+            <summary>
+            发布时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.jobID">
+            <summary>
+            职位Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.jobName">
+            <summary>
+            职位名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.JobClass">
+            <summary>
+            职位类型名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.CountyName">
+            <summary>
+            所属区县
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.salary">
+            <summary>
+            薪酬
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.salaryUnit">
+            <summary>
+            结算单位
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.clearanceMethod">
+            <summary>
+            结算方式名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.address">
+            <summary>
+            工作地址
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.distance">
+            <summary>
+            距离
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.startTime">
+            <summary>
+            上班开始时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.endtime">
+            <summary>
+            上班结束时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.startDate">
+            <summary>
+            工作日期开始时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.endDate">
+            <summary>
+            工作日期结束时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.isInterview">
+            <summary>
+            是否需要面试
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.isSex">
+            <summary>
+            是否限制男女
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.isHeight">
+            <summary>
+            是否限制身高
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.isHealth">
+            <summary>
+            是否需要安全证
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.contactMan">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.Phone">
+            <summary>
+            联系方式 仅在客户报名后才能电话按钮可用
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.Content">
+            <summary>
+            工作内容
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.Persons">
+            <summary>
+            招聘人数（int），B端知道人天，C端不知道，所以仅提供招聘人数要求，等于（招//聘人天-已招聘人天）/每个人连续最短天数（向上去整）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.applicantNumber">
+            <summary>
+            当前 职位申请人数  有10人以上则显示，小于则不显示
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.CreateDate">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.CollectState">
+            <summary>
+            是否收藏
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.ApplyState">
+            <summary>
+            是否报名
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.CompanyName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.gender">
+            <summary>
+            性别要求 1 男， 2 女
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.height">
+            <summary>
+            身高要求
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.jobLatitude">
+            <summary>
+            职位经度，在地图时用
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.jobLongitude">
+            <summary>
+            //职位纬度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.continousDays">
+            <summary>
+            要求连续报名的时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.unvailableDates">
+            <summary>
+            已经报名日期
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.shareTitle">
+            <summary>
+            分享标题
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.shareIcon">
+            <summary>
+            分享图标
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.shareDes">
+            <summary>
+            分享详情
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.shareUrl">
+            <summary>
+            分享Url
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.isBinding">
+            <summary>
+            是否绑定
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.nowToStartDateDayNum">
+            <summary>
+            当前时间到工作开始时间的天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.dayNum">
+            <summary>
+            工作天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.tags">
+            <summary>
+            标签列表
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.autoTimeShare">
+            <summary>
+            是否分时
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobModel.JobRecruitDetails">
+            <summary>
+            招聘日期明细
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerMessageModel.Id">
+            <summary>
+            信息Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerMessageModel.MessageContent">
+            <summary>
+            信息内容
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerMessageModel.MessageType">
+            <summary>
+            信息类型（1：系统，2：录用）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerMessageModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerMessageModel.JobName">
+            <summary>
+            职位名称
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.JobSeekerWalletActionLogModel">
+            <summary>
+            账户明细
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerWalletActionLogModel.transactionTime">
+            <summary>
+            交易时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerWalletActionLogModel.transactionType">
+            <summary>
+            交易类型，1 转出 2 转入
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerWalletActionLogModel.transactionAmount">
+            <summary>
+            交易金额
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerWalletActionLogModel.successTrans">
+            <summary>
+            交易是否成功
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobSeekerWalletActionLogModel.jobName">
+            <summary>
+            职位名称
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.PayeeModel">
+            <summary>
+            收款模型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.SerialNumber">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.UserName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.jobId">
+            <summary>
+            jobId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.StartDate">
+            <summary>
+            工作开始时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.EndDate">
+            <summary>
+            工作结束时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.WorkDays">
+            <summary>
+            工作天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.PaymentTotalAmount">
+            <summary>
+            付款金额
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.BasePayAmount">
+            <summary>
+            基本工资
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.BonusAmount">
+            <summary>
+            奖金
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.DebitAmount">
+            <summary>
+            扣款
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PayeeModel.Note">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PingppResultDataModel.object">
+            <summary>
+            数据对象
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PingppResultDataObjectModel.id">
+            <summary>
+            chargeId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PingppResultDataObjectModel.order_no">
+            <summary>
+            订单Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PingppResultDataObjectModel.paid">
+            <summary>
+            成功标识
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.PingppResultDataObjectModel.channel">
+            <summary>
+            支付渠道
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.PingppResultModel">
+            <summary>
+            ping++回调结果模型
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.CompleteExtractApplysRequestParam">
+            <summary>
+            完成申请请求操作
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompleteExtractApplysRequestParam.ExtractApplyIdList">
+            <summary>
+            申请Id列表
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.ConfirmApplyRequestParam">
+            <summary>
+            确认报名请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ConfirmApplyRequestParam.jobId">
+            <summary>
+            职位Id
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.DspTransactionInfoRequestParam">
+            <summary>
+            提现请求参数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.EditEnrollDatesRequestParam">
+            <summary>
+            修改录用时间参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.EditEnrollDatesRequestParam.enrollId">
+            <summary>
+            报名信息Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.EditEnrollDatesRequestParam.enrollDates">
+            <summary>
+            录用日期
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.EmployRequestParam">
+            <summary>
+            录用请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.EmployRequestParam.enrollId">
+            <summary>
+            报名信息Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.EmployRequestParam.applyDateList">
+            <summary>
+            录用日期
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.EmployRequestParam.jobId">
+            <summary>
+            职位Id
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetExtractApplysRequestParam">
+            <summary>
+            获取申请列表参数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetJobGroupsByCompanyRequestParam">
+            <summary>
+            获取工作组列表（录用，过期）
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetOpenCitiesRequestParam">
+            <summary>
+            获取开发城市列表请求参数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetJobsOrderByRelaseDateRequestParam">
+            <summary>
+            获取职位列表根据发布时间排序请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsOrderByRelaseDateRequestParam.class">
+            <summary>
+            全屏显示所有类型，1 促销 2 文员 3 派发 4 校内 5 店员 6 会展 0不限
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsOrderByRelaseDateRequestParam.schedule">
+            <summary>
+            1急招 2 周末兼职 3 假期  4 短期 0不限
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsOrderByRelaseDateRequestParam.payMethod">
+            <summary>
+            1 日结 2 周结 3 月结 4 完工结 0不限
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsOrderByRelaseDateRequestParam.keyword">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsOrderByRelaseDateRequestParam.district">
+            <summary>
+            城区Id 0 全部
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsOrderByRelaseDateRequestParam.city">
+            <summary>
+            城市Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsOrderByRelaseDateRequestParam.pageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsOrderByRelaseDateRequestParam.pageSize">
+            <summary>
+            每页记录数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetPayDetailRequestParam.jobGroupId">
+            <summary>
+            工作组Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetPayDetailRequestParam.jobId">
+            <summary>
+            工作Id
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetResumeRequestParam">
+            <summary>
+            获取简历接口
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetSuccessPayDetailRequestParam">
+            <summary>
+            获取成功支付的支付明细
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetSuccessPayDetailRequestParam.keyword">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.ImportPayDetailRequestParam">
+            <summary>
+            导入支付明细请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ImportPayDetailRequestParam.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ImportPayDetailRequestParam.jobGroupId">
+            <summary>
+            工作组Id
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.LogoutRequestParam">
+            <summary>
+            注销请求参数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.PaymentRequestParam">
+            <summary>
+            支付请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.PaymentRequestParam.jobGroupId">
+            <summary>
+            职位组Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.PaymentRequestParam.selectedEnrollPayItems">
+            <summary>
+            选择的职位支付明细
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.PaymentRequestParam.payType">
+            <summary>
+            支付方式 0 支付宝 1 微信
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.PaymentRequestParam.total">
+            <summary>
+            总金额
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.PaymentSuccessRequestParam">
+            <summary>
+            支付成功
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.PaymentSuccessRequestParam.id">
+            <summary>
+            chargeId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.PaymentSuccessRequestParam.data">
+            <summary>
+            ping++返回数据
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.RegisterRequestParam">
+            <summary>
+            注册请求参数
+            </summary>
+        </member>
+        <member name="M:Glz.GreensJob.Dto.RequestParams.RegisterRequestParam.#ctor">
+            <summary>
+            创建一个 <c>RegisterRequestParam</c> 类型实例
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RegisterRequestParam.verificationCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RegisterRequestParam.userMobileNumber">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RegisterRequestParam.password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RegisterRequestParam.openId">
+            <summary>
+            微信openId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RegisterRequestParam.invitation">
+            <summary>
+            邀请人Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RegisterRequestParam.isMobile">
+            <summary>
+            是否手机登陆（0：其他，1：手机）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RegisterRequestParam.channelId">
+            <summary>
+            baidu推送channelId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RetrievePasswordRequestParam.verificationCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RetrievePasswordRequestParam.password">
+            <summary>
+            设置密码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.RetrievePasswordRequestParam.userMobileNumber">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.SetResumeRequestParam">
+            <summary>
+            设置简历请求参数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.TransferMoneyOutRequestParam">
+            <summary>
+            提现请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.TransferMoneyOutRequestParam.Money">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.TransferMoneyOutRequestParam.cardNumber">
+            <summary>
+            卡号（微信号）
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.AccountPwdSetRequestParam">
+            <summary>
+            提现密码设置请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.AccountPwdSetRequestParam.verificationCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.AccountPwdSetRequestParam.password">
+            <summary>
+            设置密码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.AccountPwdSetRequestParam.userMobileNumber">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.ApplyJobRequestParam">
+            <summary>
+            报名请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ApplyJobRequestParam.jobId">
+            <summary>
+            职位Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ApplyJobRequestParam.applyDateList">
+            <summary>
+            报名时间列表
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.BindingMobileRequestParam">
+            <summary>
+            绑定手机号
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.CancelApplyRequestParam">
+            <summary>
+            取消报名
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CancelApplyRequestParam.jobId">
+            <summary>
+            职位Id
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.CancelCollectRequestParam">
+            <summary>
+            取消收藏
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CancelCollectRequestParam.jobId">
+            <summary>
+            职位Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.cityID">
+            <summary>
+            所在城市
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.companyName">
+            <summary>
+            企业名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.companyImage">
+            <summary>
+            企业logo
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.companyIntroduce">
+            <summary>
+            企业介绍
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.companyAddr">
+            <summary>
+            企业地址
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.license">
+            <summary>
+            营业执照
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.certificate">
+            <summary>
+            人力资源证书
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.companyContact">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.companyTel">
+            <summary>
+            联系方式
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.CompanyActionRequestParam.status">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.ConfigurationSetRequestParam">
+            <summary>
+            设置配置项请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ConfigurationSetRequestParam.recruitMessage">
+            <summary>
+            是否接受录用、招聘消息 1 接受 0 不接受
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ConfigurationSetRequestParam.urgentJobMessage">
+            <summary>
+            紧急高薪工作消息1 接受 0 不接受
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.EditJobInfoRequestParam.JobGroupObject">
+            <summary>
+            职位信息
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.FavoriteJobRequestParam">
+            <summary>
+            用户收藏职位
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.FavoriteJobRequestParam.jobId">
+            <summary>
+            工作Id
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetCitiesRequestParam">
+            <summary>
+            获取城市列表参数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetCityForCoordinateRequestParam">
+            <summary>
+            根据坐标获取城市名称请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetCityForCoordinateRequestParam.lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetCityForCoordinateRequestParam.lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetConfigurationRequestParam">
+            <summary>
+            获取用户配置
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetEmployeeJobsRequestParam">
+            <summary>
+            获取用户相关职位列表请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetEmployeeJobsRequestParam.type">
+            <summary>
+            列表类型 1 收藏 2 报名 3 录用 4.收款情况
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetEmployeeJobsRequestParam.pageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetEmployeeJobsRequestParam.pageSize">
+            <summary>
+            每页记录数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetJobDetailRequestParam">
+            <summary>
+            获取职位详情请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobDetailRequestParam.jobId">
+            <summary>
+            工作Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobGroupDetailRequestParam.jobGroupID">
+            <summary>
+            工作组Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobInfoRequestParam.Status">
+            <summary>
+            1 全部（点击“职位管理”）2 草稿 3 待审核 4 招聘/录用 5 过期
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobInfoRequestParam.pageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobInfoRequestParam.pageSize">
+            <summary>
+            每页记录数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobInfoRequestParam.keyWordJobName">
+            <summary>
+            搜索职位名
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam">
+            <summary>
+            获取职位请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.class">
+            <summary>
+            全屏显示所有类型，1 促销 2 文员 3 派发 4 校内 5 店员 6 会展 0不限
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.schedule">
+            <summary>
+            1急招 2 周末兼职 3 假期  4 短期 0不限
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.payMethod">
+            <summary>
+            1 日结 2 周结 3 月结 4 完工结 0不限
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.keyword">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.pageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.pageSize">
+            <summary>
+            每页记录数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.sortCondition">
+            <summary>
+            0：默认（最新发布），1：距离最近
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.district">
+            <summary>
+            城区Id 0 全部
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.city">
+            <summary>
+            城市Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetJobsRequestParam.searchCondition">
+            <summary>
+            搜索条件
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetUserInfoRequestParam">
+            <summary>
+            获取用户信息
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.GetVerifyCodeRequestParam">
+            <summary>
+            GetVerifyCode请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetVerifyCodeRequestParam.userMobileNumber">
+            <summary>
+            用户手机号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.GetVerifyCodeRequestParam.platform">
+            <summary>
+            1 学生端绑定 2 企业端 3 设置提现密码 4 学生端注册 5学生端登陆 6学生端找回密码
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.ICoordinateRequestParam">
+            <summary>
+            坐标接口
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ICoordinateRequestParam.lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ICoordinateRequestParam.lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.IdentityRequestParam">
+            <summary>
+            带身份证认证的参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.IdentityRequestParam.userId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.IdentityRequestParam.companyId">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.IdentityRequestParam.sessionId">
+            <summary>
+            会话Id
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.IPageRequestParam">
+            <summary>
+            分页参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.IPageRequestParam.pageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.IPageRequestParam.pageSize">
+            <summary>
+            每页记录数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.LoginActionRequestParam">
+            <summary>
+            会员登录
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginActionRequestParam.password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginActionRequestParam.userMobileNumber">
+            <summary>
+            用户手机号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginActionRequestParam.saveLogin">
+            <summary>
+            是否保存登陆状态，缺省一个小时
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.LoginRequestParam">
+            <summary>
+            登陆请求参数
+            </summary>
+        </member>
+        <member name="M:Glz.GreensJob.Dto.RequestParams.LoginRequestParam.#ctor">
+            <summary>
+            创建一个 <c>LoginRequestParam</c> 类型实例
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginRequestParam.verificationCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginRequestParam.userMobileNumber">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginRequestParam.password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginRequestParam.openId">
+            <summary>
+            微信openId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginRequestParam.invitation">
+            <summary>
+            邀请人Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginRequestParam.type">
+            <summary>
+            登陆类型 0：密码登陆，1：验证码登陆
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginRequestParam.isMobile">
+            <summary>
+            是否手机登陆（0：其他，1：手机）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.LoginRequestParam.channelId">
+            <summary>
+            baidu推送channelId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ModifyApplyRequestParam.jobId">
+            <summary>
+            职位Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ModifyApplyRequestParam.applyDateList">
+            <summary>
+            报名时间列表
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.PrefetchSearchRequestParam">
+            <summary>
+            预搜索参数对象
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.PrefetchSearchRequestParam.pageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.PrefetchSearchRequestParam.pageSize">
+            <summary>
+            每页记录数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam">
+            <summary>
+            发布职位请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.name">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.jobClassifyID">
+            <summary>
+            类型Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.jobCategoryID">
+            <summary>
+            档期Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.genderLimit">
+            <summary>
+            性别 男 1、女 0、男女不限 2
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.heightLimit">
+            <summary>
+            身高限制158以上(0)，160以上(1)，165以上(2)，168以上(3)，170以上(4)，175以上(5)，180以上(6)，185以上(7)
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.recruitNum">
+            <summary>
+            招聘人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.erollMethod">
+            <summary>
+            1 按天报名，2及以上表示至少连续的天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.startDate">
+            <summary>
+            招聘起始时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.endDate">
+            <summary>
+            招聘结束时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.startTime">
+            <summary>
+            工作开始时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.endTime">
+            <summary>
+            工作结束时间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.jobAdrressList">
+            <summary>
+            工作地点
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.payCategoryID">
+            <summary>
+            日结 1 周结 2 月结3完工结 4
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.payUnitID">
+            <summary>
+            工资单位，/小时（0） /天（1），/周（2） /月（3）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.salary">
+            <summary>
+            工资
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.urgent">
+            <summary>
+            录用后是否消息提醒
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.msgByUniversityList">
+            <summary>
+            发布短信学校列表
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.healthCertificate">
+            <summary>
+            是否需要健康证
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.interview">
+            <summary>
+            是否需要面试
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.employer">
+            <summary>
+            工作单位
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.contactMan">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.mobileNumber">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.gatheringPlace">
+            <summary>
+            集合地点
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.interviewPlace">
+            <summary>
+            面试地点
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.status">
+            <summary>
+            状态 1：草稿，2：待审核
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.content">
+            <summary>
+            职位详情
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.continousDays">
+            <summary>
+            连续工作天数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.ReleaseJobRequestParam.autoTimeShare">
+            <summary>
+            是否分时
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam">
+            <summary>
+            搜索职位请求参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.distance">
+            <summary>
+            1  1公里内 2  3公里内 3  5公里内 4 10公里内 5 大于10公里及以上 0不限  //和肖工确认公众号方式可以取得位置信息
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.class">
+            <summary>
+            全屏显示所有类型，1 促销 2 文员 3 派发 4 校内 5 店员 6 会展 0不限
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.schedule">
+            <summary>
+            1急招 2 周末兼职 3 假期  4 短期 0不限
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.payMethod">
+            <summary>
+            1 日结 2 周结 3 月结 4 完工结 0不限
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.WeekDay">
+            <summary>
+            周几
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.dailyRange">
+            <summary>
+            日薪区间
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.keyword">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.pageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.pageSize">
+            <summary>
+            每页记录数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.SearchJobsRequestParam.keyWordCondition">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.RequestParams.WeiXinIdentityRequestParam">
+            <summary>
+            微信身份认证参数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.WeiXinIdentityRequestParam.openId">
+            <summary>
+            微信OpenId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.WeiXinIdentityRequestParam.jsId">
+            <summary>
+            求职者Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.RequestParams.WeiXinIdentityRequestParam.sessionId">
+            <summary>
+            用户凭证
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.VerificationCodeModel">
+            <summary>
+            验证码对象
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.VerificationCodeModel.verificationCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.VerificationCodeModel.validDuration">
+            <summary>
+            有效性期
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.VerificationCodeModel.DurationDateTime">
+            <summary>
+            间隔到期时间
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.ProvinceObject">
+            <summary>
+            省信息
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ProvinceObject.id">
+            <summary>
+            省Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ProvinceObject.name">
+            <summary>
+            省名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ProvinceObject.Cities">
+            <summary>
+            城市列表
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.ID">
+            <summary>
+            简历Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.City_ID">
+            <summary>
+            城市Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.CityName">
+            <summary>
+            学校名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.University_ID">
+            <summary>
+            大学Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.UniversityName">
+            <summary>
+            学校名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Height">
+            <summary>
+            身高（cm）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Weight">
+            <summary>
+            体重（kg）
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.HealthCertificate">
+            <summary>
+            是否有健康证
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.IDNumber">
+            <summary>
+            身份证编号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Major">
+            <summary>
+            专业
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Education">
+            <summary>
+            学历
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Image">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Birthday">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Description">
+            <summary>
+            经历描述
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.ResumeObject.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.SearchRecordModel">
+            <summary>
+            搜索记录
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.SearchRecordModel.ID">
+            <summary>
+            搜索记录Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.SearchRecordModel.OpenId">
+            <summary>
+            微信OpenId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.SearchRecordModel.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.SearchRecordModel.Distance">
+            <summary>
+            距离范围
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.SearchRecordModel.Class">
+            <summary>
+            职位类型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.SearchRecordModel.Schedule">
+            <summary>
+            日程类型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.SearchRecordModel.PayMethod">
+            <summary>
+            支付周期类型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.SearchRecordModel.Keyword">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.SearchRecordModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.MobileUserInfoModel">
+            <summary>
+            用户信息模型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.id">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.userName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.walletBalance">
+            <summary>
+            钱包余额
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.presentState">
+            <summary>
+            提现状态
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.haveNotReadEnrollInfo">
+            <summary>
+            是否有录用信息未读取
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.haveNotReadAccountInfo">
+            <summary>
+            是否有录用信息未读取
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.isBinding">
+            <summary>
+            是否绑定
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.giveUpCount">
+            <summary>
+            飞单次数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.sessionId">
+            <summary>
+            会话Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.openId">
+            <summary>
+            openId
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.isSetPassword">
+            <summary>
+            是否设置了账号密码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.isSetPayWechatAccount">
+            <summary>
+            是否设置了支付微信账号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.isSameWechatAccount">
+            <summary>
+            是否相同支付微信账号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.MobileUserInfoModel.payWechatAccount">
+            <summary>
+            支付微信账号
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.JobRecruitDetailModel">
+            <summary>
+            报名时间模型
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobRecruitDetailModel.Date">
+            <summary>
+            报名日期
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobRecruitDetailModel.RecruitNum">
+            <summary>
+            招聘人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobRecruitDetailModel.ApplicantNum">
+            <summary>
+            报名人数
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.JobRecruitDetailModel.EmploymentNum">
+            <summary>
+            录用人数
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.Dto.WebUserInfoModel">
+            <summary>
+            B端用户信息
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.WebUserInfoModel.id">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.WebUserInfoModel.userName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.WebUserInfoModel.CompanyID">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.WebUserInfoModel.companyName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.WebUserInfoModel.saveLogin">
+            <summary>
+            自动登陆
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.Dto.WebUserInfoModel.sessionId">
+            <summary>
+            会话Id
+            </summary>
+        </member>
+        <member name="T:Glz.GreensJob.WebApi.Models.RequestParams.RegisterActionRequestParam">
+            <summary>
+            会员注册
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.WebApi.Models.RequestParams.RegisterActionRequestParam.verificationCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.WebApi.Models.RequestParams.RegisterActionRequestParam.userMobileNumber">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Glz.GreensJob.WebApi.Models.RequestParams.RegisterActionRequestParam.password">
+            <summary>
+            客户输入的密码
+            </summary>
+        </member>
+    </members>
+</doc>

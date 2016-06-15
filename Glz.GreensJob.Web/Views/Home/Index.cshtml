@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>进入首页_格林兼职</title>
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            padding: 0 auto;
+            background-color: #000;
+        }
+
+        #content {
+            background: url("../Content/img/Gl_index.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            padding: 360px 0 360px 0;
+            height: auto;
+        }
+
+        .jinru img {
+            position: absolute;
+            left: 26%;
+            top: 100%;
+            width: 380px;
+            margin-left: 112px;
+            margin-top: -115px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="jinru"><a href="@Url.Action("Index", "Main")"><img src="~/Content/img/jinrubtn.png" alt="快速进入主页"></a></div>
+    </div>
+</body>
+</html>

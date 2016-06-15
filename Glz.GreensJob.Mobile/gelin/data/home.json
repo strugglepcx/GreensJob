@@ -1,0 +1,95 @@
+{
+	"addressJson": [
+		{
+			"name": "武  汉",
+			"index": 0
+		}, {
+			"name": "合  肥",
+			"index": 1
+		}, {
+			"name": "南  昌",
+			"index": 2
+		}, {
+			"name": "广  州",
+			"index": 3
+		}, {
+			"name": "长  沙",
+			"index": 4
+		}, {
+			"name": "其 他",
+			"index": 5
+		}
+	],
+	
+	"distanceJson": [
+		{
+			"name": "武汉",
+			"index": 0
+		}, {
+			"name": "合肥",
+			"index": 1
+		}, {
+			"name": "南昌",
+			"index": 2
+		}, {
+			"name": "广州",
+			"index": 3
+		}, {
+			"name": "长沙",
+			"index": 4
+		}, {
+			"name": "其他",
+			"index": 5
+		}
+	],
+
+
+	"categoryJson": [
+		{
+			"name": "兼职",
+			"index": 0
+		}, {
+			"name": "全职",
+			"index": 1
+		}
+	],
+
+
+	"timeJson": [
+		{
+			"name": "有档期",
+			"index": 0
+		}, {
+			"name": "无档期",
+			"index": 1
+		}
+	],
+
+
+	"settlementJson": [
+		{
+			"name": "周结",
+			"index": 0
+		}, {
+			"name": "日结",
+			"index": 1
+		}
+	],
+
+
+	"jobListJson": [
+		{
+			"title": "周结",
+			"des": "desdesdesdesdesdesdesdesdesdesdesdesdesdesdesdes",
+			"money": "80/天",
+			"time": "刚刚",
+			"index": 0
+		}, {
+			"title": "周结",
+			"des": "desdesdesdesdesdesdesdesdesdesdesdesdesdesdesdes",
+			"money": "90/天",
+			"time": "刚刚",
+			"index": 1
+		}
+	]
+}

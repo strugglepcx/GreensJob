@@ -1,0 +1,138 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        object {
+            outline: none;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>登录-格林兼职</title>
+    <meta name="description" content="最专业的兼职招聘平台，最火的校园兼职平台，无忧担保，高薪快速上岗，更有多种活动补贴！ ">
+    <link href="~/Content/css/login_reg.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/dropdownStyle.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+    <noscript><link rel="stylesheet" type="text/css" href="~/Content/css/noJS.css" /></noscript>
+    <style type="text/css">
+        .login-check a {
+            color: #999;
+        }
+
+            .login-check a:hover {
+                color: blue;
+            }
+    </style>
+    <script type="text/javascript">
+        function check() {
+            document.getElementById('submit_register_id').disabled = 'disabled';
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrap clearfix">
+            <div class=" logo fl"></div>
+            <div class="header-r fr">
+                <!-- <div class="hotLine"><span>合作热线：</span><em>027-87732345</em></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="box1">
+        <div class="wrap clearfix">
+            <div class="reg">
+                <div class="reg-inner">
+                    <div class="loginReg-menu">
+                        <form class="main form-horizontal" action="javascript:void(0)" onsubmit="return check();">
+                            <div class="menu-item active" ref-form="loginForm"><a href="#">企业登录</a></div>
+                            <div class="menu-item " ref-form="regForm">
+                                <a href="registered-greemjob.html">免费注册</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="loginForm loginReg-form" style="display:block">
+                        <div class="error-area" id="jz_tip_login_id">请输入正确的手机号!</div>
+                        @using (Html.BeginForm("Logon", "User", FormMethod.Post, new { @class = "pt20" }))
+                        {
+                            <form action="" id="myform" method="post" class="pt20">
+                                <input type="hidden" value="@ViewData["ReturnUrl"]" name="ReturnUrl" />
+                                <div class="controls">
+                                    <!-- <i class="tel-ico"></i> -->
+                                    <input type="text" name="phone_login" id="phone_id" tabindex="1" autocomplete="on" placeholder="用户名 / 手机号" required>
+                                </div>
+                                <div class="controls">
+                                    <!-- <i class="pwd-ico"></i> -->
+                                    <input type="password" name="passwd_login" id="password_id" autocomplete="on" placeholder="输入密码" tabindex="2" required>
+                                </div>
+                                <div class="login-check">
+                                    <a href="#" class="forget-pwd fr">忘记密码</a>
+                                </div>
+                                <div class="login-btn">
+                                    <input type="submit" id="jz_submit_login" value="登 录" class="subtn" style="width: 100px; font-size: 18px;">
+                                </div>
+                                <p id="searchResult"></p>
+                            </form>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <img src="img/difooter.png" alt="" class="bg-tu">
+            <!-- Copyright ©2015-2016 格林™ 世诚优聘 鄂ICP备15013333号 有偿服务<br/><br/>
+            联系电话：027-87743235&nbsp&nbsp武汉格林族信息科技有限公司 -->
+        </div>
+    </div>
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <style type="text/css">
+        .error-area {
+            margin-bottom: 18px;
+        }
+
+        .controls {
+            margin: 5px 0;
+            height: 20px;
+            font-size: 14px;
+            padding: 15px 0px;
+        }
+
+            .controls input {
+                height: 30px;
+                width: 95%;
+            }
+
+        .subtn {
+            margin: 5px 0;
+            text-align: center;
+            margin-left: 35.0%;
+            background-color: #009934;
+            color: #fff;
+            text-transform: border-radius:10px;
+            -webkit-border-radius: 10px;
+            border: none;
+            /*width:100px;*/
+            height: 35px;
+            cursor: pointer;
+        }
+
+        .loginReg-menu {
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+
+    <div id="qq-sendUrl-btn"></div>
+    <div id="qb-sougou-search" style="display: none; opacity: 0;">
+        <p>搜索</p>
+        <p class="last-btn">复制</p>
+        <iframe src=""></iframe>
+    </div>
+</body>
+</html>

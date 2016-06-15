@@ -1,0 +1,674 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        object {
+            outline: none;
+        }
+
+        #preview {
+            width: 114px;
+            height: 114px;
+            border: 2px solid #F5F5F5;
+            overflow: hidden;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        #imghead {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+        }
+        /*.pagebtn{
+                color: #008080;
+                opacity: 0;
+                cursor: pointer;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                filter: alpha(opacity=0);
+                z-index: 1;
+            }*/
+        .pagebtn {
+            position: relative;
+            display: inline-block;
+            background: #D0EEFF;
+            border: 1px solid #99D3F5;
+            border-radius: 4px;
+            padding: 4px 10px;
+            overflow: hidden;
+            color: #1E88C7;
+            text-decoration: none;
+            text-indent: 0;
+            line-height: 20px;
+        }
+
+            .pagebtn input {
+                position: absolute;
+                font-size: 50px;
+                right: 0;
+                top: 0;
+                opacity: 0;
+            }
+
+            .pagebtn:hover {
+                background: #AADFFD;
+                border-color: #78C3F3;
+                color: #004974;
+                text-decoration: none;
+            }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>
+        首页-格林兼职
+    </title>
+    <link href="~/Content/css/global.__1457765152__.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/css/b_global.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/css/b_index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/createUploader.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/imageUploader2.js" async="true"></script>
+    <link type="text/css" href="~/Content/css/imageUploader.css" rel="stylesheet">
+    <script type="text/javascript" src="~/Scripts/event.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/log_tracker_simple.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/uuid.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/unvalid_uuids.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/rpc3.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/event_emitter.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/swfuploader.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/baidu_js_push.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/random_id.js" async="true"></script>
+    <script type="text/javascript" src="~/Scripts/swfupload.2.5.3.js" async="true"></script>
+    <script type="text/javascript">
+        //图片上传预览    IE是用了滤镜。
+        function previewImage(file) {
+            var MAXWIDTH = 114;
+            var MAXHEIGHT = 114;
+            var div = document.getElementById('preview');
+            if (file.files && file.files[0]) {
+                div.innerHTML = '<img id=imghead>';
+                var img = document.getElementById('imghead');
+                img.onload = function () {
+                    var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                    img.width = rect.width;
+                    img.height = rect.height;
+                    // img.style.marginLeft = rect.left+'px';
+                    img.style.marginTop = rect.top + 'px';
+                }
+                var reader = new FileReader();
+                reader.onload = function (evt) { img.src = evt.target.result; }
+                reader.readAsDataURL(file.files[0]);
+            }
+            else //兼容IE
+            {
+                var sFilter = 'filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+                file.select();
+                var src = document.selection.createRange().text;
+                div.innerHTML = '<img id=imghead>';
+                var img = document.getElementById('imghead');
+                img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                status = ('rect:' + rect.top + ',' + rect.left + ',' + rect.width + ',' + rect.height);
+                div.innerHTML = "<div id=divhead style='width:" + rect.width + "px;height:" + rect.height + "px;margin-top:" + rect.top + "px;" + sFilter + src + "\"'></div>";
+            }
+        }
+        function clacImgZoomParam(maxWidth, maxHeight, width, height) {
+            var param = { top: 0, left: 0, width: width, height: height };
+            if (width > maxWidth || height > maxHeight) {
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+
+                if (rateWidth > rateHeight) {
+                    param.width = maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                } else {
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+
+    </script>
+</head>
+<body class="b-index">
+    <div class="header">
+        <div class="w">
+            <div class="jz-logo">
+                <a href="#" title="格林兼职"></a>
+            </div>
+            <div class="b-version">商家版</div>
+            <div class="header-r clearfix">
+                <span class="fl fc-4b mr20">武汉四次元信息科技有限公司</span>
+                <i class="fl l"></i>
+                <span class="fl cpy-enter"><a href="@Url.Action("Logout", "User")">退出</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="w mt10 clearfix">
+        <div class="aside-container">
+            <div class="aside">
+                <div class="pub-area">
+                    <a href="FaBuzhiwe-greenjob.html
+					" class="pub-btn">发布职位</a>
+                </div>
+                <div class="b-menu">
+                    <dl>
+                        <dt><a href="@Url.Action("Index", "Main")" class="cur"><i class="menu-ico1"></i>首 页</a></dt>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="#">
+                                <i class="menu-ico2"></i>职位管理
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <!-- <li><a href="#">草稿</a></li> -->
+                                <li><a href="DaishenHe-greenjob.html">待审核</a></li>
+                                <li><a href="LuYongzhe-greenjob.html">招聘/录用</a></li>
+                                <li><a href="YiJieshu-greenjob.html">已结束</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#"><i class="menu-ico3"></i>支付和账户</a></dt>
+                        <dd>
+                            <ul>
+                                <li><a href="zhiFu-greenjob.html">支 付</a></li>
+                                <li><a href="ZhifuMingxi-greenjob.html">账户明细</a></li>
+                                <li><a href="ZhuanruZhuanchu-greenjob.html">转入/转出</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#"><i class="menu-ico4"></i>用户管理</a></dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">管理员</a></li>
+                                <li><a href="UserAgent-greenjob.html">管理用户</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="mt10 clearfix certification">
+                <a href="#"></a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            GJ.use('jquery', function () {
+                /*$(".pub-btn").mouseover(function(){
+                 $(".b-menu").show();
+                 return true;
+                 }).mouseout(function(){
+                 $(".b-menu").hide();
+                 return true;
+                 });*/
+                $(".pub-btn").click(function () {
+                    var isLimit = false;
+                    $.ajax({
+                        url: '',
+                        type: "GET",
+                        dataType: "json",
+                        async: false,
+                        success: function (result) {
+                            if (result.error < 0) {
+                                isLimit = true;
+                                alert(result.message);
+                            } else {
+                                return true;
+                            }
+                        }
+                    });
+                    if (isLimit) {
+                        return false;
+                    }
+                });
+            });
+        </script>
+        <div class="main">
+            <div class="b-company">
+                <dl class="clearfix">
+                    <dt class="b-company-pic">
+                        <div class="ui-uploader-header">
+                            <div class="uparea clearfix">
+                                <div class="upbtn">
+                                    <div id="ui-uploader-1" class="ui-uploader">
+                                        <div class="ui-uploader-action" style="margin-top:-24px;">
+                                            <div class="ui-uploader-iframe-container" style="float:none;">
+                                                <div>
+                                                    <object id="SWFUpload_0" name="SWFUpload_0" type="application/x-shockwave-flash" data="#" width="81" height="24" class="swfupload">
+                                                        <param name="wmode" value="opaque">
+                                                        <param name="movie" value="">
+                                                        <param name="quality" value="high">
+                                                        <param name="allowScriptAccess" value="always">
+                                                        <param name="flashvars" value="">
+                                                    </object>
+                                                </div>
+                                            </div>
+                                            <span class="ui-uploader-message" style="margin-left:0px;margin-top:55px;color:#DCDCDC;">请上传企业LOGO,图片大小(114,114)</span>
+                                        </div>
+                                        <div id="preview">
+                                            <!-- <input type="file" class="pagebtn" onchange="previewImage(this)"/> -->
+                                            <img id="imghead" border=0 src="head_180.jpg" width="114" height="114" />
+                                        </div>
+                                        <a href="javascript:;" class="pagebtn"><input type="file" onchange="previewImage(this)" />请上传Logo</a>
+
+                                        <!--<div class="ui-uploader-thumbImages ui-uploader-sortable">
+                                            <li id="undefined_undefined" class="success">
+
+                                            <div class="ui-uploader-content" style="width:114px;height:114px;" id="preview">
+                                            <span class="ui-uploader-progress" style="line-height: 180px; display: none;"></span>
+                                            <div class="ui-uploader-error" style="text-align: center;"></div>
+                                            <img src="#" style="width:114px;height:114px;" id="imghead">
+                                            <div id="flash-14592340152217061" data-id="flash-14592340152217061" style="display: none;">
+                                            </div>
+                                            <div class="ui-uploader-edit-bar" style="display:none">
+                                            <a href="javascript:;" class="ui-uploader-rotate-left">&nbsp;</a>
+                                            <a href="javascript:;" class="ui-uploader-rotate-right">&nbsp;</a>
+                                            <a href="javascript:;" class="ui-uploader-edit" style="display:none">&nbsp;</a>
+                                            </div>
+                                            <div style="width: 200px; display: none;" class="ui-uploader-bar">
+                                            <a href="#" class="ui-uploader-sorter pull-right" data-direction="right">&nbsp;</a>
+                                            <a href="#" class="ui-uploader-sorter pull-left" data-direction="left">&nbsp;</a>
+                                            <a href="#" class="ui-uploader-status">封面</a>
+                                            </div>
+                                            </div>
+                                            <a href="#" class="ui-uploader-close">&nbsp;&nbsp;&nbsp;</a>
+                                            <textarea class="ui-uploader-description" placeholder=""></textarea>
+                                            </li>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="avatar" id="award_image_id" onchange="imageUploadSuccess(this);" value="">-->
+                                    </div>
+                                </div>
+                            </div>
+                    </dt>
+                    <dd class="b-company-txt">
+                        <div class="b-company-t">
+                            <h2>武汉四次元信息科技有限公司</h2>
+                            <a href="#" class="authenticated">已认证</a>
+                        </div>
+                        <div class="balance clearfix">
+                            <span class="ba-money">余额<em>0<i>元</i></em></span>
+                            <a href="#" class="ba-btn">充值</a>
+                        </div>
+                        <div class="b-company-posInfo">
+                            <span>在招职位：<em class="fc-f60">0</em></span>
+                            <span>待审核职位：<em class="fc-f60">1</em></span>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="bList">
+                <div class="bList-t clearfix">
+                    <h3>全部职位</h3>
+                    <div class="bSearch">
+                        <form action="./进行中_files/进行中.html" method="POST">
+                            <input type="hidden" name="type" value="test">
+                            <input type="text" name="title" value="" class="s-text" placeholder="请输入职位名称或者ID">
+                            <input type="submit" class="s-submit" value="搜索">
+                        </form>
+                    </div>
+                </div>
+                <div class="bList-item">
+                    <div class="bList-item-top">
+                        <div class="bList-item-t">
+                            【格林推荐】校园海报张贴员
+                        </div>
+                        <div class="bList-item-num">
+                            <!--<div class="bList-item-num-bar">待面谈：<em class="fc-70">0人</em></div>
+                            <div class="bList-item-num-load">
+                                <span>报名人数：</span>
+                                <span class="loading"><i style="width:0%"></i></span>
+                                <span class="remain"><em>0</em>/8</span>
+                            </div>-->
+                            <div class="bList-item-num-load">
+                                <a href="#">编辑</a>
+
+                                <br />
+                                <br />
+                                <a href="#">重新发布</a>
+                                <br />
+                                <br />
+                                <a href="#">刷新</a>
+                                <br />
+                                <br />
+                                <a href="#">删除</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bList-item-mid">
+                        <ul class="clearfix">
+                            <li><em class="salary">60</em>元/天</li>
+                            <li><span>职位ID：</span>1033426</li>
+                            <li><span>发布时间：</span><em class="fc-70">2016-03-29</em></li>
+                            <li>
+                                <span>招聘状态：</span>
+                                <em class="fc-f60" id="em-1033426">审核拒绝</em> (
+                                <em>职位内容有误</em>)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bList-item-bot">
+                        <div class="bList-item-mid">
+                            <ul class="clearfix">
+                                <li><a href="">线上申请:5/8人 </a></li>
+                                <li><a href="">总录用:5/8人</a></li>
+                                <li><a href="">线上录用:0人</a></li>
+                                <li><a href="">线下录用:0人</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="bList-item-opLink">
+                            <!--<span><a id="delPost" data-pid="1033426" href="javascript:;">删除</a></span>-->
+                            <span id="refresh_span_1033426" style="display: none;">
+
+                                <a class="refresh_post refresh_post_1033426" data-pid="1033426" href="javascript:;">刷新</a>
+                                <div class="min-b-doubt-box refresh_post_hover_1033426" style="display: none;">
+                                    <i class="b-doubt-arrow"></i>
+                                    <div class="min-b-doubt-box-con">刷新职位可提高排名，每个职位每天最多刷新3次</div>
+                                </div>
+                            </span>
+                            <!--<span><a href="http://vip.doumi.com/employer/post/pub/1033426">修改职位</a></span>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bList-item">
+                <div class="bList-item-top">
+                    <div class="bList-item-t">
+                        【格林推荐】校园海报张贴员
+                    </div>
+                    <div class="bList-item-num">
+                        <!--<div class="bList-item-num-bar">待面谈：<em class="fc-70">0人</em></div>
+                        <div class="bList-item-num-load">
+                            <span>报名人数：</span>
+                            <span class="loading"><i style="width:0%"></i></span>
+                            <span class="remain"><em>0</em>/8</span>
+                        </div>-->
+                        <div class="bList-item-num-load">
+                            <a href="#">编辑</a>
+
+                            <br />
+                            <br />
+                            <a href="#">重新发布</a>
+                            <br />
+                            <br />
+                            <a href="#">刷新</a>
+                            <br />
+                            <br />
+                            <a href="#">删除</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bList-item-mid">
+                    <ul class="clearfix">
+                        <li><em class="salary">60</em>元/天</li>
+                        <li><span>职位ID：</span>1033426</li>
+                        <li><span>发布时间：</span><em class="fc-70">2016-03-29</em></li>
+                        <li>
+                            <span>招聘状态：</span>
+                            <em class="fc-f60" id="em-1033426">审核拒绝</em> (
+                            <em>职位内容有误</em>)
+                        </li>
+                    </ul>
+                </div>
+                <div class="bList-item-bot">
+                    <div class="bList-item-mid">
+                        <ul class="clearfix">
+                            <li><a href="">线上申请:5/8人 </a></li>
+                            <li><a href="">总录用:5/8人</a></li>
+                            <li><a href="">线上录用:0人</a></li>
+                            <li><a href="">线下录用:0人</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bList-item-opLink">
+                        <!--<span><a id="delPost" data-pid="1033426" href="javascript:;">删除</a></span>-->
+                        <span id="refresh_span_1033426" style="display: none;">
+
+                            <a class="refresh_post refresh_post_1033426" data-pid="1033426" href="javascript:;">刷新</a>
+                            <div class="min-b-doubt-box refresh_post_hover_1033426" style="display: none;">
+                                <i class="b-doubt-arrow"></i>
+                                <div class="min-b-doubt-box-con">刷新职位可提高排名，每个职位每天最多刷新3次</div>
+                            </div>
+                        </span>
+                        <!--<span><a href="#">修改职位</a></span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pageBox">
+        </div>
+    </div>
+    </div><br />
+    <div class="footer" style="display:none"></div>
+    <script type="text/javascript">
+        GJ.use('jquery', function () {
+            $(".refresh_post").click(function () {
+                if ($(this).hasClass('click_run_out')) {
+                    alert('当天刷新次数已用完，请明天再来！');
+                    return false;
+                }
+                if ($(this).hasClass('click_disabled')) {
+                    alert('请勿连续刷新，隔十分钟再操作哦');
+                    return false;
+                }
+                var pid = $(this).data('pid');
+                $(this).addClass('click_disabled');
+                setTimeout(function () {
+                    $(".refresh_post_" + pid).removeClass('click_disabled');
+                }, 10 * 60 * 1000);
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://vip.doumi.com/employer/post/ajaxrefreshpost',
+                    data: {
+                        id: pid
+                    },
+                    dataType: 'json',
+                    success: function (ret) {
+                        if (ret.code == '1' || ret.code == '-5') {
+                            $(".refresh_post_" + pid).addClass('click_run_out');
+                        }
+                        if (ret.code >= 0) {
+                            alert('刷新成功！');
+                        } else {
+                            alert(ret.msg);
+                        }
+                    }
+                });
+            });
+            $(".refresh_post").mouseover(function () {
+                var pid = $(this).data('pid');
+                $('.refresh_post_hover_' + pid).show();
+            });
+            $(".refresh_post").mouseout(function () {
+                var pid = $(this).data('pid');
+                $('.refresh_post_hover_' + pid).hide();
+            });
+        });
+
+        function imageUploadSuccess(data) {
+            var img_src = data.value;
+            var img_src = eval('(' + img_src + ')');
+            var imageInfos = img_src[0][0];
+            $('.ui-uploader-content').attr('style', 'width:114px;height:114px;');
+            $('.ui-uploader-content img').attr('style', 'width:114px;height:114px;');
+            $('.ui-uploader-edit').attr('style', 'display:none');
+            $('.ui-uploader-edit-bar').attr('style', 'display:none');
+            var str = $('.ui-uploader-content img').attr('src');
+            if (str && str.indexOf('image.ganjistatic1.com/http://sta.doumi.com') > 0) {
+                $('.ui-uploader-content img').attr('src', 'http://sta.doumi.com/src/image/jianzhi/web/b/logo_120x120.png');
+            }
+            if (str && str.indexOf('image.ganjistatic1.com/http://sta.ganji.com/') > 0) {
+                $('.ui-uploader-content img').attr('src', 'http://sta.doumi.com/src/image/jianzhi/web/b/logo_120x120.png');
+            }
+            if (imageInfos && imageInfos.is_new == true) {
+                var url = "http://vip.doumi.com/ajaxuploadcompanylogo";
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    dataType: "json",
+                    data: {
+                        'image_src': imageInfos.thumb_image
+                    },
+                    success: function (result) {
+                        window.alert(result.msg);
+                    },
+                    error: function (result) {
+                        window.alert('服务器超时')
+                    }
+                });
+            }
+        }
+        GJ.use(['tool/uploader2/createUploader.js', 'tool/uploader2/imageUploader/imageUploader2.js', 'jquery'], function (Uploader, ImageUploader, $) {
+            $el = $('.ui-uploader-header');
+            window.ganji_uploader = new Uploader(GJ.mix({
+                attachmentRootUrl: "http://image.ganjistatic1.com/",
+                $btnContainer: $el.find('.ui-uploader-iframe-container'),
+                $input: $el.find('#award_image_id'),
+                $messageContainer: $el.find('.ui-uploader-message'),
+                $thumbImagesContainer: $el.find('.ui-uploader-thumbImages'),
+                button_image_url: 'http://sta.doumi.com/src/image/icon/upload.png',
+                showMessage: true,
+                uploaderTip: '',
+                enableCloudPhoto: false,
+                maxNum: 1,
+                type: 'gif,jpg,jpeg,png,bmp,txt',
+                setCover: false,
+                uploadedFiles: [{
+                    "image": "http://sta.ganji.com/att/project/app/parttime_job/doumi/logo_app.png",
+                    "thumb_image": "http://sta.ganji.com/att/project/app/parttime_job/doumi/logo_app.png"
+                }], // 已上传的文件
+                postParams: {
+                    maxSize: 1024 * 1024,
+                    thumbWidth: 200,
+                    thumbHeight: 200,
+                    resizeHeight: 200,
+                    resizeWidth: 200,
+                    resizeImage: true,
+                    uploadDir: 'nomask'
+                }
+            }, GJ.ImageUploader2));
+            $(".optbtn").live('click', function (e) {
+                var $target = $(e.currentTarget);
+                var pid = $target.attr('data-pid');
+                var lstatus = $target.attr('data-lstatus');
+                changePostStatus(pid, lstatus, e);
+            });
+
+            function changePostStatus(pid, lstatus, e) {
+                var ajaxUrl = '/ajax/open/';
+                var $target = $(e.currentTarget);
+                var $tag = ''; //按钮显示文案
+                var $but = ''; //按钮提示文案
+                var $em_txt = ''; //招聘状态
+                var $em_css = ''; //招聘样式
+                if (parseInt(lstatus, 10) === 5 || parseInt(lstatus, 10) === 3) {
+                    ajaxUrl = '/ajax/close/';
+                    lstatus = -5;
+                    $tag = '暂停报名';
+                    $but = '开启报名';
+                    $em_txt = '报名已暂停';
+                    $em_css = 'fc-70';
+                } else {
+                    lstatus = 5;
+                    $tag = '开启报名';
+                    $but = '暂停报名';
+                    $em_txt = '招聘中';
+                    $em_css = 'fc-fa';
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: ajaxUrl,
+                    data: {
+                        id: pid,
+                        citydomain: 'bj'
+                    },
+                    dataType: 'json'
+                }).done(function (json) {
+                    if (json.code === 0) {
+                        $target.find('a').html($but);
+                        $('#em-' + pid).attr('class', $em_css);
+                        $('#em-' + pid).html($em_txt);
+                        $target.attr('data-lstatus', lstatus);
+                        if (lstatus == 5) {
+                            $('#refresh_span_' + pid).show();
+                        } else {
+                            $('#refresh_span_' + pid).hide();
+                        }
+                        window.alert($tag + '成功');
+                    } else {
+                        window.alert(json.msg);
+                    }
+                }).fail(function () {
+                    window.alert('操作失败,请刷新页面重试');
+                });
+            }
+            $("#delPost").live('click', function (e) {
+                var $target = $(e.currentTarget);
+                var pid = $target.attr('data-pid');
+                $.ajax({
+                    type: 'GET',
+                    url: '/employer/post/ajaxdel/?act=judge',
+                    data: {
+                        id: pid,
+                        citydomain: 'bj'
+                    },
+                    dataType: 'json'
+                }).done(function (json) {
+                    if (json.code == 0) {
+                        ToDelPost(pid);
+                    } else if (json.code > 0) {
+                        if (window.confirm('请确定该职位所有人员工资已结清')) {
+                            ToDelPost(pid);
+                        }
+                    }
+                }).fail(function () {
+                    window.alert('操作失败,请刷新页面重试');
+                });
+            });
+
+            function ToDelPost(pid) {
+                if (window.confirm('确定要删除该职位吗？')) {
+                    $.ajax({
+                        type: 'GET',
+                        url: '/employer/post/ajaxdel?act=del',
+                        data: {
+                            id: pid,
+                            citydomain: 'bj'
+                        },
+                        dataType: 'json'
+                    }).done(function (data) {
+                        if (data.code == 1) {
+                            alert('删除成功')
+                            window.location.reload();
+                        } else {
+                            alert('删除失败');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+    <div id="qq-sendUrl-btn"></div>
+    <div id="qb-sougou-search" style="display: none; opacity: 0;">
+        <p>搜索</p>
+        <p class="last-btn">复制</p>
+        <iframe src=""></iframe>
+    </div>
+</body>
+</html>

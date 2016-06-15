@@ -1,0 +1,284 @@
+.ui-uploader {
+  display: block;
+}
+.ui-uploader .ui-uploader-bar span{
+  display: inline-block;
+  color: #000;
+}
+.ui-uploader .ui-uploader-bar a {
+    color: #000;
+}
+.ui-uploader .ui-uploader-bar a.ui-uploader-clickable:hover {
+  text-decoration: underline;
+}
+.ui-uploader-bar a:hover {
+  text-decoration: none;
+}
+.ui-uploader .ui-uploader-bar a:visited {
+  color: #000;
+}
+.ui-uploader-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  text-align: center;
+  font-size: 11px;
+  opacity: .75;
+  line-height: 20px;
+  height: 20px;
+}
+.ui-uploader-action {
+  height: 24px;
+}
+.ui-uploader-iframe-container {
+  height: 24px;
+  float: left;
+}
+.ui-uploader-message {
+  display: inline-block;
+  height: 22px;
+  font-size: 12px;
+  margin-left: 10px;
+  line-height: 22px;
+}
+.ui-uploader-thumbImages {
+  list-style: none;
+  _height:1px;_line-height:1px;
+  margin-top: 8px;
+}
+.ui-uploader-sorter {
+  display: none;
+  background: url(http://sta.ganjistatic1.com/src/image/icon/upimg.png);
+  background-repeat: no-repeat;
+}
+.ui-uploader-sortable .ui-uploader-inProgress .ui-uploader-sorter,
+.ui-uploader-thumbImages .ui-uploader-sorter{
+  display: none;
+}
+.ui-uploader-sortable .ui-uploader-sorter{
+  display: inline;
+  width: 12px; height: 12px;
+  line-height: 12px;
+  margin: 4px 0;
+}
+.ui-uploader-sorter.pull-left {
+  float: left;
+  background-position: 0 -12px;
+}
+.ui-uploader-sorter.pull-right {
+  float: right;
+  background-position: -12px -12px;
+}
+.ui-uploader-thumbImages li {
+  float: left;
+  position: relative;
+  margin: 0px 5px 5px 0px;
+  padding: 3px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.ui-uploader-thumbImage {
+  position: relative;
+  padding: 3px;
+  border: 1px solid #b2b2b2
+}
+.ui-uploader-thumbImage img {
+  margin: 0;
+}
+.readonly .ui-uploader-close {
+  display: none;
+}
+.ui-uploader-close {
+  width: 12px;
+  line-height: 12px;
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  background: url(http://sta.ganjistatic1.com/src/image/icon/upimg.png) no-repeat 0 0;
+}
+
+.ui-uploader-edit-bar {
+  position: absolute;
+  right: 3px;
+  bottom: 23px;
+  background: #fff;
+  text-align: center;
+  font-size: 11px;
+  opacity: .75;
+  line-height: 20px;
+  height: 20px;
+  padding: 0 4px;
+  border-radius: 2px;
+  display: none;
+}
+.success .ui-uploader-edit-bar {
+  display: block;
+}
+
+.ui-uploader-edit, .ui-uploader-rotate-left, .ui-uploader-rotate-right {
+  width: 12px;
+  line-height: 12px;
+  margin: 4px 0;
+  float: left;
+  background: url(http://sta.ganjistatic1.com/src/image/icon/upimg.png) no-repeat 0 -24px;
+  display: inline-block;
+}
+.ui-uploader-rotate-left {
+  background-position: 0 -36px;
+  display: none;
+  margin: 4px 4px 4px 0;
+}
+.ui-uploader-rotate-left:hover {
+  background-position: -12px -36px;
+}
+.ui-uploader-rotate-right {
+  background-position: 0 -48px;
+  display: none;
+  margin: 4px 8px 4px 4px;
+}
+.ui-uploader-rotate-right:hover {
+  background-position: -12px -48px;
+}
+
+.loading .ui-uploader-edit {
+  background:url(http://sta.ganjistatic1.com/src/tool/uploader2/css/small_loading.gif) no-repeat 0 0;
+}
+
+.loaded .ui-uploader-edit {
+  background-position: 0 -60px;
+}
+.loaded .ui-uploader-edit:hover {
+  background-position: -12px -60px;
+}
+
+.loaded .ui-uploader-rotate-right,
+.loaded .ui-uploader-rotate-left {
+  display: block;
+}
+
+.ui-uploader-edit:hover {
+  background-position: -12px -24px;
+  text-decoration: none;
+}
+
+.ui-uploader-content {
+  position: relative;
+}
+
+.ui-uploader textarea {
+	*margin-right: -8px !important;
+}
+.ui-uploader-close:hover {
+  text-decoration: none;
+}
+.ui-uploader-inProgress .ui-uploader-content {
+  background: url(loading.gif) no-repeat;
+  font-size: 8px;
+  -webkit-text-size-adjust: none;
+}
+.ui-uploader-inProgress img {
+  display: none;
+}
+.ui-uploader-inProgress .ui-uploader-progress {
+  display: block;
+  line-height: 100%;
+  text-align: center;
+}
+.ui-uploader-hasError .ui-uploader-error {
+  text-align: center;
+  display: block;
+}
+
+.ui-uploader-hasError img {
+  display: none;
+}
+.ui-uploader-hasError .ui-uploader-bar span {
+  color: red;
+}
+.ui-uploader-placeholder {
+  color: #999;
+}
+.ui-uploader-progress,
+.ui-uploader-error,
+.ui-uploader-description {
+  display: none;
+  line-height: 20px;
+}
+.ui-uploader-hasDescription .ui-uploader-description {
+  border: 1px solid #ddd;
+  padding: 0;
+  margin: 0;
+  display: block;
+  overflow-y: auto;
+  resize: none;
+}
+.ui-uploader-inProgress .ui-uploader-status,
+.ui-uploader-hasError .ui-uploader-status {
+  display: inline;
+}
+.ui-uploader-clearfix {
+  display: inline-block;
+}
+.ui-uploader-clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .ui-uploader-clearfix {
+  display: block;
+}
+* html .ui-uploader-clearfix {
+  height: 1%;
+}
+.ui-uploader-status:hover {
+  cursor: default;
+}
+.ui-uploader-clickable:hover {
+  cursor: pointer;
+}
+.ui-uploader-cloud-photo {
+  font-size:13px;
+  position:relative;
+  width:756px; height:299px;
+  background:url("http://sta.ganjistatic1.com/src/image/globle/ued/cloud_upimg3.png") no-repeat 0 0
+}
+.ui-uploader-cloud-photo-checkcode{
+  position:absolute;
+  left: 412px;
+  top:68px;
+  font-size:20px;
+  font-weight: bold;
+  color: rgb(240, 110, 0);
+}
+.ui-uploader-cloud-photo-QR-code{
+  left: 330px;
+  top: 120px;
+  position:absolute;
+}
+.ui-uploader-cloud-photo-download-link{
+  position:absolute;
+  bottom:35px;
+  left:57px;
+  font-size:14px;
+}
+.ui-uploader-cloud-photo-btn {
+  display: inline-block;
+  width: 80px; height: 24px;
+  line-height: 24px;
+  margin-left: 5px;
+  background: url('http://stacdn201.ganjistatic1.com/src/image/icon/upload_mobile.png') no-repeat 0 0;
+}
+.ui-uploader-cloud-photo-btn:hover {
+  background-position: 0 -24px;
+  text-decoration: none;
+}
+.ui-uploader-cloud-photo-btn:active {
+  background-position: 0 -48px;
+}
+.ui-uploader-cloud-photo-btn.disabled {
+  background-position: 0 -62px;
+}

@@ -1,0 +1,123 @@
+{
+	"titleJson": {
+		"title0": "职位档期",
+		"title1": "职位类型",
+		"title2": "日薪区间",
+		"title3": "结算方式",
+		"title4": "距离当前位置",
+		"title5": "上班时间"
+	},
+	"valueJson": [
+		{
+			"value0": "暑期工",
+			"value1": "短期工",
+			"value2": "一般兼职"
+		}, {
+			"value0": "促销员",
+			"value1": "会展",
+			"value2": "礼仪/模特",
+			"value3": "销售",
+			"value4": "派发",
+			"value5": "服务员",
+			"value6": "推广",
+			"value7": "客服",
+			"value8": "快递分"
+		}, {
+			"value0": "<100元",
+			"value1": "100元-150元",
+			"value2": "150元-200元",
+			"value3": ">200元"
+		}, {
+			"value0": "日结",
+			"value1": "周结",
+			"value2": "月结"
+		}, {
+			"value0": "1公里",
+			"value1": "3公里",
+			"value2": "5公里",
+			"value3": "10公里",
+			"value4": "10公里以上"
+		}, {
+			"value0": "周一",
+			"value1": "周二",
+			"value2": "周三",
+			"value3": "周四",
+			"value4": "周五",
+			"value5": "周六",
+			"value6": "周日"
+		}
+	]
+	,
+	"dataJson": {
+		"scheduleJson": [
+			{
+				"value": "暑期工"
+			}, {
+				"value": "短期工"
+			}, {
+				"value": "一般兼职"
+			}
+		],
+		"typeJson": [
+			{
+				"value": "促销员"
+			}, {
+				"value": "会展"
+			}, {
+				"value": "礼仪/模特"
+			}, {
+				"value": "销售"
+			}
+		],
+		"payJson": [
+			{
+				"value": "<100元"
+			}, {
+				"value": "100元-150元"
+			}, {
+				"value": "150元-200元"
+			}, {
+				"value": ">200元"
+			}
+		],
+		"settlementJson": [
+			{
+				"value": "日结"
+			}, {
+				"value": "周结"
+			}, {
+				"value": "月结"
+			}
+		],
+		"distanceJson": [
+			{
+				"value": "1公里"
+			}, {
+				"value": "3公里"
+			}, {
+				"value": "5公里"
+			}, {
+				"value": "10公里"
+			}, {
+				"value": "10公里以上"
+			}
+		],
+		"workTimeJson": [
+			{
+				"value": "周一"
+			}, {
+				"value": "周二"
+			}, {
+				"value": "周三"
+			}, {
+				"value": "周四"
+			}, {
+				"value": "周五"
+			}, {
+				"value": "周六"
+			}, {
+				"value": "周日"
+			}
+		]
+	}
+}

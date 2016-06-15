@@ -1,0 +1,27 @@
+
+@font-face {font-family: "iconfont";
+  src:url('../fonts/iconfont.ttf') format('truetype'); 
+}
+
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-money:before { content: "\e602"; }
+.icon-map:before { content: "\e60a"; }
+.icon-delete:before { content: "\e607"; }
+.icon-place:before { content: "\e603"; }
+.icon-notice:before { content: "\e609"; }
+.icon-cancel:before { content: "\e608"; }
+.icon-personal:before { content: "\e60b"; }
+.icon-time:before { content: "\e604"; }
+.icon-ok:before { content: "\e605"; }
+.icon-no:before { content: "\e606"; }
+.icon-mui-icon-male:before { content: "\e600"; }
+.icon-mui-icon-female:before { content: "\e601"; }
+.icon-phone:before { content: "\e60c"; }

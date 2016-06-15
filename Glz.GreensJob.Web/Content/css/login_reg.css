@@ -1,0 +1,420 @@
+a {
+	color: #06c;
+	text-decoration: none
+}
+
+a:hover {
+	color: #e30
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	box-shadow: 0 0 0 999px #fff inset;
+	-webkit-box-shadow: 0 0 0 999px #fff inset
+}
+
+body {
+	overflow-x: hidden;
+	min-width: 900px;
+	background-color: #fcf9f6;
+	margin:0;
+	padding: 0;
+}
+
+.pt20 {
+	padding-top: 20px
+}
+
+.mt20 {
+	margin-top: 20px
+}
+
+.mt30 {
+	margin-top: 30px
+}
+
+.wrap {
+	width: 1000px;
+	margin: 0 auto
+}
+
+.header {
+	height: 80px;
+	background-color: #fcf9f6
+}
+
+.logo {
+	background: url("../img/logo.png") no-repeat;
+	_background: url("../img/logo.png") no-repeat;
+	width: 270px;
+	height: 80px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+.header-r {
+	line-height: 24px;
+	margin-top: 28px;
+	font: normal 14px/24px 'Microsoft YaHei'
+	width:230px;
+}
+
+.header-r a {
+	color: #a8a8a8;
+	text-decoration: none
+}
+
+.header-r a.cur-link {
+	color: #4b4b4b
+}
+
+.header-r a:hover {
+	color: #4b4b4b;
+	text-decoration: none
+}
+
+.hotLine {
+	font-family: 'Microsoft YaHei';
+	line-height: 28px;
+	float: right;
+	padding-right: 80px;
+
+}
+
+.hotLine span {
+	color: #707070;
+	font-size: 14px;
+	float: left;
+	font-style: normal
+}
+
+.hotLine em {
+	font-size: 20px;
+	letter-spacing: .2px;
+	font-weight: bold;
+	font-style: italic;
+	color: #009934
+}
+
+.box1 {
+	margin-top: 28px;
+	margin-left: 55px;
+	background: url(../img/dm_enter_02.png) no-repeat top left;
+	height: 450px;
+	
+}
+
+/*.box2 {
+	background: url('../../../../image/v5/want_manage/jz/dm_enter_03.png') no-repeat top center;
+	height: 511px
+}
+
+.box3 {
+	background: url('../../../../image/v5/want_manage/jz/dm_enter_04.png') no-repeat top center;
+	height: 525px
+}
+
+.box4 {
+	background: url('../../../../image/v5/want_manage/jz/dm_enter_05.png') no-repeat top center;
+	height: 451px
+}
+
+.box5 {
+	background: url('../../../../image/v5/want_manage/jz/dm_enter_06.png') no-repeat top center;
+	height: 476px
+}
+
+.box6 {
+	background: url('../../../../image/v5/want_manage/jz/dm_enter_07.png') no-repeat top center;
+	height: 165px
+}*/
+
+.reg {
+	width: 310px;
+	padding: 5px;
+	background-color: #f1efed;
+	float: right;
+	margin-top: 15px
+}
+
+.reg-inner {
+	border: solid 1px #e5e4e4;
+	background-color: #fff
+}
+
+.loginReg-menu {
+	height: 48px
+}
+
+.menu-item {
+	float: left;
+	width: 50%;
+	text-align: center;
+	font: normal 16px/48px 'Microsoft YaHei';
+	color: #999;
+	background-color: #f7f7f7;
+	cursor: pointer
+}
+
+.menu-item a {
+	color: #999;
+	text-decoration: none
+}
+
+.loginReg-menu .active {
+	font-weight: bold;
+	color: #4b4b4b;
+	background-color: #fff
+}
+
+.loginReg-menu .active a {
+	font-weight: bold;
+	color: #4b4b4b
+}
+
+.loginForm,
+.regForm {
+	padding: 0 29px 24px
+}
+
+.error-area {
+	border: solid 1px #fccf74;
+	background-color: #fff6e4;
+	color: #f60;
+	font-size: 14px;
+	height: 20px;
+	padding: 7px 10px;
+	margin-top: 10px
+}
+
+.login-input,
+.reg-input {
+	border: solid 1px #c8c8c8;
+	line-height: 34px;
+	height: 34px;
+	margin-top: 25px;
+	padding-left: 30px;
+	position: relative
+}
+
+.reg-input {
+	padding-left: 9px
+}
+
+/*.tel-ico,
+.pwd-ico,
+.error-area-ico {
+	background: url('../img/ico.png') no-repeat；
+}*/
+
+.tel-ico,
+.pwd-ico {
+	/*display: inline-block;*/
+	position: absolute;
+	left: 1px;
+	top: 3px;
+	width: 15px;
+	height: 16px;
+	vertical-align:center;
+}
+.tel-ico img,
+.pwd-ico img{
+/*    vertical-align:center;*/
+    margin: 0;
+}
+
+/*.tel-ico {
+	background-position: 0 0;
+}
+
+.pwd-ico {
+	background-position: 0 -27px
+}*/
+
+.login-input input,
+.reg-input input {
+	border: none 0;
+	outline: 0;
+	line-height: 16px;
+	height: 16px;
+	padding: 9px 0;
+	width: 218px;
+	font-size: 14px;
+	color: #999;
+	float: left
+}
+
+.placeholder {
+	color: #999;
+	font-size: 14px;
+	position: absolute;
+	left: 30px;
+	top: 11px;
+	line-height: 14px;
+	visibility: hidden;
+	background: 0
+}
+
+.reg-input .placeholder {
+	left: 9px
+}
+
+.showPlaceholder .placeholder {
+	visibility: visible;
+	cursor: text
+}
+
+.login-check,
+.reg-check {
+	margin-top: 10px;
+	padding: 8px 0 0
+}
+
+.auto-login,
+.agreement {
+	line-height: 14px;
+	color: #4b4b4b
+}
+
+.auto-login .chk,
+.agreement .chk {
+	margin: 2px 10px 0 0;
+	padding: 0;
+	float: left;
+	width: 13px;
+	height: 13px;
+	overflow: hidden
+}
+
+.forget-pwd {
+	color: #06c;
+	float: right;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.verifyCode {
+	margin-top: 18px
+}
+
+.verifyCode input {
+	line-height: 16px;
+	height: 16px;
+	padding: 9px 10px;
+	border: solid 1px #c8c8c8;
+	width: 98px
+}
+
+.verifyCode span img {
+	vertical-align: top
+}
+
+.pass-verifyCode {
+	text-align: right;
+	margin-top: 5px;
+	line-height: 18px
+}
+
+.pass-verifyCode a {
+	color: #06c
+}
+
+.pass-verifyCode a:hover {
+	color: #e30
+}
+
+.login-btn{
+	/*-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;*/
+    border-radius: 15px;
+}
+.login-btn,
+.reg-btn {
+	margin-top: 25px
+}
+
+.btn {
+	height: 50px;
+	text-align: center;
+	width: 100%;
+	background-color: #009934;
+	font: normal 26px/48px 'Microsoft YaHei';
+	border: none 0;
+	color: #fff;
+	vertical-align: middle;
+	overflow: visible;
+	display: block;
+}
+
+.btn:hover {
+	background-color: #006400;
+}
+
+.send-codeInput {
+	float: left;
+	line-height: 16px;
+	height: 16px;
+	padding: 9px;
+	border: solid 1px #c8c8c8;
+	width: 100px;
+	font-size: 14px
+}
+
+.mt10 {
+	margin-top: 10px
+}
+
+.send-codeBtn {
+	float: right;
+	display: block;
+	width: 118px;
+	height: 34px;
+	line-height: 34px;
+	background-color: #f5f5f5;
+	border: solid 1px #dcdcdc;
+	text-align: center;
+	color: #707070;
+	font-size: 14px
+}
+
+.send-codeBtn:hover {
+	text-decoration: none;
+	background-color: #f9f9f9
+}
+
+.error-area-ico {
+	background-position: 0 -58px;
+	height: 20px;
+	width: 20px;
+	float: left;
+	margin-right: 5px
+}
+
+.line {
+	width: 1px;
+	height: 10px;
+	background-color: #999;
+	font-size: 0;
+	margin: 0 10px;
+	vertical-align: middle;
+	display: inline-block
+}
+
+.footer {
+	background-color: #66CC66;
+	padding: 35px 0;
+	line-height: 20px;
+	text-align: center;
+	/*color: #707070;*/
+	width:100%;
+	/*box-shadow:3px 3px 3px #707070;*/
+}
+
+.bg-tu{
+	margin: 0 auto;
+}
+/*.footer a {
+	color: #707070;
+	margin: 0 8px
+}*/

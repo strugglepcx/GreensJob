@@ -1,0 +1,659 @@
+/*Atom class
+*/
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: 0 0 0 999px #fff inset;
+    -webkit-box-shadow: 0 0 0 999px #fff inset;
+}
+
+.placeholder {
+    color: #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+::-moz-placeholder {
+    color: #626262;
+}
+
+input:-moz-placeholder {
+    color: #aaa;
+}
+
+input {
+    vertical-align: middle;
+}
+
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.main {
+    float: right;
+    width: 780px;
+}
+
+.fc-4b {
+    color: #4b4b4b;
+}
+
+.fc-70,.fc-f60 {
+    color: #4b4b4b;
+}
+
+.fc-99 {
+    color: #999;
+}
+
+.fc-fa {
+    color: #ffaa2c;
+}
+
+.fc-06c {
+    color: #06c;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.w100 {
+    width: 100px;
+}
+
+.w160 {
+    width: 160px;
+}
+
+.w260 {
+    width: 260px;
+}
+
+.w280 {
+    width: 280px;
+}
+
+.bgf {
+    background-color: #fff;
+}
+
+/*header
+    */
+.header {
+    height: 79px;
+    border-bottom: solid 1px #008080;
+    background-color: #fff;
+}
+
+.jz-logo {
+    float: left;
+    margin-top: 15px;
+    background: url("../img/logo.png") no-repeat;
+    width: 190px;
+    height: 50px;
+}
+
+.jz-logo a {
+    display: block;
+    height: 50px;
+}
+
+.b-version {
+    float: left;
+    font-size: 18px;
+    margin-top: 28px;
+    padding-left: 10px;
+    line-height: 24px;
+    color: #008080;
+    font-family: 'Microsoft YaHei';
+}
+
+.header-r {
+    float: right;
+}
+
+.header-r a {
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.header-r a:hover {
+    color: #e30;
+    text-decoration: underline;
+}
+
+.header-r span {
+    display: inline-block;
+    line-height: 79px;
+}
+
+.login-reg-link a {
+    margin-right: 20px;
+}
+
+.l {
+    width: 1px;
+    height: 10px;
+    background-color: #ddd;
+    font-size: 0;
+    display: inline-block;
+}
+
+.cpy-enter {
+    margin-left: 20px;
+}
+
+.header-r .l {
+    margin-top: 34px;
+}
+
+.header-r span {
+    font-size: 14px;
+}
+
+/*.header-r .ar,
+.myPhone {
+    background: url(../img/monthly-calendar.png) no-repeat;
+}
+
+.header-r .ar {
+    display: inline-block;
+    width: 12px;
+    height: 6px;
+    background-position: 0 -25px;
+    vertical-align: middle;
+}
+
+.myPhone {
+    padding-left: 15px;
+    background-position: 0 1px;
+}
+
+.phone-qrcode {
+    margin: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.phone-qrcode a {
+    color: #4b4b4b;
+}
+
+.show-phone-qrcode {
+    display: block;
+    border: solid 1px #ddd;
+    position: absolute;
+    background-color: #f6f9f2;
+    width: 260px;
+    padding: 20px 0 20px 20px;
+    left: 50%;
+    margin-left: -140px;
+    top: 79px;
+}
+
+.show-phone-qrcode dl dd {
+    float: left;
+    line-height: 18px;
+    font-size: 12px;
+    color: #707070;
+    margin-top: 32px;
+    padding-left: 20px;
+    *width: 125px;
+}
+
+.show-phone-qrcode .arrow {
+    background-image: url("../../../../image/v5/want_manage/jz/jz_d_icon.png");
+    background-repeat: no-repeat;
+}
+
+.show-phone-qrcode .arrow {
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -7px;
+    background-position: -16px -127px;
+    width: 14px;
+    height: 7px;
+}
+
+.jz-d-qrcode-pic {
+    background: url("../../../../image/v5/dm/dm_qrcode_1123.png?v=1215") no-repeat;
+    background-position: 0 0;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;*/
+}
+
+/*aside
+    */
+.aside {
+    float: left;
+    width: 170px;
+    /*background-color: #fff;*/
+    padding-left:50px;
+}
+
+.aside-container{
+    background-color:#fff;
+    width: 150px;
+
+}
+
+.pub-area {
+    padding-bottom: 20px;
+}
+
+.pub-btn {
+    display: block;
+    height: 50px;
+    font: normal 18px/50px 'hiragino sans gb', 'Microsoft YaHei';
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: #00AA00;
+}
+
+.pub-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #329632;
+}
+
+.b-menu {
+    border-top: dashed 0px #e6e6e6;
+}
+.b-menu dl{
+    border-top: dashed 1px #e6e6e6;
+    padding-bottom: 10px;
+}
+.b-menu a {
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.b-menu a.cur{color: #4b4b4b}
+.b-menu a.cur:hover {
+    color: #329632;
+}
+.b-menu dt a:hover {
+    color: #329632;
+}
+.b-menu dt {
+    font: normal 16px/40px 'hiragino sans gb', 'Microsoft YaHei';
+    padding: 5px 0px 5px 0px;
+}
+
+.b-menu dt a {
+    display: block;
+    padding-left: 10px;
+}
+
+.b-menu dt a.cur {
+    background-color: #fafafa;
+}
+
+.b-menu dt i {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 12px;
+    margin-right: 10px;
+    background-image: url("../../../../image/jianzhi/web/b/b_ico.png?v=1207");
+    background-repeat: no-repeat;
+}
+
+.menu-ico1 {
+    background-position: 0 0;
+}
+
+.b-menu .cur .menu-ico1 {
+    background-position: -103px -195px;
+}
+
+.menu-ico2 {
+    background-position: -103px -223px;
+}
+
+.b-menu .cur .menu-ico2 {
+    background-position: 0 -21px;
+}
+
+.menu-ico3 {
+    background-position: 2px -44px;
+}
+
+.b-menu .cur .menu-ico3 {
+    background-position: -103px -130px;
+}
+
+.menu-ico4 {
+    background-position: 0 -67px;
+}
+
+.b-menu .cur .menu-ico4 {
+    background-position: -103px -162px;
+}
+
+.b-menu dd ul {
+    padding-left: 40px;
+}
+
+.b-menu dd li {
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.b-menu dd li a:hover{
+    color: #329632;
+}
+
+/*pageBox
+    */
+.pageBox {
+    margin-top: 50px;
+    clear: both;
+    text-align: center;
+    line-height: 34px;
+}
+
+.pageBox li {
+    display: inline;
+    margin: 0 5px;
+    font: normal 16px/34px 'hiragino sans gb', 'Microsoft YaHei';
+}
+
+.pageBox li a,
+.pageBox li span {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    color: #707070;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.pageBox .active span,
+.pageBox li a:hover {
+    background-color: #fed738;
+    color: #fff;
+}
+
+.pageBox .active {
+    cursor: default;
+}
+
+/*tips
+*/
+.b-tips {
+    background-color: #fafafa;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 15px 20px;
+    color: #707070;
+}
+
+.b-tips h3 {
+    font-weight: 500;
+    font: normal 16px/24px 'hiragino sans gb', 'Microsoft YaHei';
+}
+
+.b-tips p {
+    text-indent: -22px;
+    padding-left: 22px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+/*doubt
+*/
+.b-doubt,
+.b-doubt-arrow {
+    background-image: url("../../../../image/jianzhi/web/b/b_ico.png");
+}
+
+.b-doubt {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    background-position: -106px -44px;
+}
+
+.b-doubt-box {
+    position: absolute;
+    top: 25px;
+    right: -20px;
+    border: solid 2px #ffaa2c;
+    width: 230px;
+    background-color: #fff;
+    color: #4b4b4b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.b-doubt-arrow {
+    position: absolute;
+    right: 15px;
+    top: -9px;
+    width: 19px;
+    height: 9px;
+    background-position: -40px -253px;
+}
+
+.b-doubt-box-con {
+    line-height: 18px;
+    padding: 10px;
+}
+
+/*footer
+    */
+.footer {
+    margin-top: 50px;
+    border-top: solid 1px #fc0;
+    background-color: #fff;
+    color: #4b4b4b;
+}
+
+.footer .wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.friendLink {
+    line-height: 24px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #f2f2f2;
+}
+
+.friendLink span {
+    display: inline-block;
+    font: normal 14px/22px 'hiragino sans gb', 'Microsoft YaHei';
+    color: #4b4b4b;
+}
+
+.friendLink a {
+    color: #4b4b4b;
+    margin: 0 6px;
+}
+
+.footer-con {
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+.footer-logo {
+    float: left;
+    margin-top: 30px;
+    width: 330px;
+    height: 50px;
+}
+
+.footer-logo a,
+.footer-logo-slogan,
+.footer-qrcode-pic,
+.footer-tel h4 i {
+    background: url("../../../../image/jianzhi/web/c/footer_bg.png?v=1215") no-repeat;
+}
+
+.footer-logo a {
+    float: left;
+    margin: 0;
+    display: block;
+    width: 160px;
+    text-indent: -9999em;
+    background-position: 0 0;
+    height: 50px;
+}
+
+.footer-logo-slogan {
+    display: block;
+    float: left;
+    width: 170px;
+    height: 50px;
+    background-position: -160px 0px;
+}
+
+.footer-qrcode {
+    float: right;
+    width: 120px;
+    margin-top: 10px;
+}
+
+.footer-qrcode-pic {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-position: 0 -61px;
+}
+
+.footer-qrcode-txt {
+    line-height: 26px;
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer-tel {
+    float: right;
+    padding-right: 30px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.footer-tel h4 {
+    height: 20px;
+    font: normal 18px/20px 'hiragino sans gb', 'Microsoft YaHei';
+}
+
+.footer-tel h4 i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-position: 0 -149px;
+    height: 20px;
+    width: 20px;
+}
+
+.footer-tel-code {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #171018;
+    line-height: 1em;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.copyRight {
+    line-height: 24px;
+    margin-top: 18px;
+}
+
+.aside-container {
+    float: left;
+    width: 210px;
+}
+
+.certification {
+    float: left;
+    width: 210px;
+    height: 100px;
+    background: url("../../../../image/jianzhi/web/b/certification.png") no-repeat;
+}
+
+.certification a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.min-b-doubt-box {
+    position: absolute;
+    top: 32px;
+    left: -85px;
+    border: solid 2px #ffaa2c;
+    width: 150px;
+    background-color: #fff;
+    color: #4b4b4b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.min-b-doubt-box-con {
+    padding: 5px;
+    line-height: 22px;
+}
+
+/*Widescreen
+*/
+@media (min-width:1280px) {
+    .w {
+        width: 1200px;
+    }
+
+    .main {
+        width: 980px;
+    }
+
+    .footer .wrap {
+        width: 1200px;
+    }
+
+}
+
+@media (min-width:1420px) {
+    .main {
+        min-height: 550px;
+    }
+
+}

@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Ping++测试</title>
+</head>
+<body>
+    <h1>Ping++测试</h1>
+    <div>
+        <div>
+            <form id="zf">
+                <input name="channel" type="radio" value="alipay_pc_direct" checked="checked" /> 支付宝
+                <br />
+                <input name="channel" type="radio" value="wx_pub_qr" /> 微信扫描
+            </form>
+        </div>
+        <input id="pay" type="button" value="支付" onclick="pay()" />
+        <div id="qrcode"></div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/pingpp-pc.js"></script>
+    <script src="~/Scripts/jquery.qrcode.min.js"></script>
+    <script src="~/Scripts/qrcode.min.js"></script>
+    <script type="text/javascript">
+        // 处理错误信息
+        function pay() {
+            alert('pay');
+            $.ajax({
+                url: 'http://localhost:57935/home/Charge',
+                type: "POST",
+                data: $('#zf').serialize(),
+                dataType: "json",
+                success: function (data) {
+                    alert('success');
+                    if (data.channel == 'wx_pub_qr') {
+                        $('#qrcode').qrcode(data.credential.wx_pub_qr);
+                    }
+                    if (data.channel == 'alipay_pc_direct') {
+                        pingppPc.createPayment(data, function (result, err) {
+                            alert(result);
+                            alert(err);
+                        });
+                    }
+                },
+                error: function () {
+                    alert('error');
+                },
+                fail: function () {
+                    alert('fail');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
